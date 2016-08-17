@@ -1,0 +1,15 @@
+//media sets
+
+@media screen and (max-width: 900px){
+	#navIdiomas{
+		/*background-color: #000;*/
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1175px){
+	.hidden-text{
+		display: none;
+	}
+	
+}

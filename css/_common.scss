@@ -1,0 +1,92 @@
+// Paddings
+
+.small-padding{
+	padding: 5px;
+}
+
+.padding-top{
+	padding-top: 15%;
+}
+.padding-top-2{
+	padding-top: 10px;
+}
+.padding-left{
+	padding-left: 5%;
+}
+.padding-bottom{
+	padding-bottom: 1%;
+}
+.no-padding{
+  padding: 0px !important;
+}
+
+.large-padding{
+	padding: 25px;
+}
+.huge-padding{
+	padding: 40px;
+}
+
+// Margins
+
+.small-margin{
+	margin: 5px;
+}
+.top-space{
+	margin-top:50px;
+}
+
+// Tamaños
+
+img.smaller{
+	width: 60%;
+}
+
+//Tamaños de fuente
+i.bigger{
+	font-size:350% !important;
+}
+
+// Aligns
+
+.justify{
+	text-align:justify;
+}
+
+.center{
+	text-align:center;
+}
+
+// Fonts
+
+.fuente-normal{
+	font-family: 'Proxima N W01 Light';
+}
+
+.fuente-normal-It{
+	font-family: 'Proxima N W01 Light It';
+}
+
+.fuente-Semibold{
+	font-family: 'Proxima N W01 Cd Smbd';
+}
+
+.fuente-Sbold-It{
+	font-family: 'ProximaNW01-CdSmbdIt';
+}
+
+.fuente-bold{
+	font-family: 'Proxima N W01 X Cd Bold';
+}
+
+.fuente-bold-It{
+	font-family: 'ProximaNW01-XCdBoldIt';
+}
+
+.fuente-Xbold{
+	font-family: 'Proxima N W01 Xbold';
+}
+
+.fuente-Xbold-It{
+	font-family: 'Proxima N W01 Xbold It';
+}
