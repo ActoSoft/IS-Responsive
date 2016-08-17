@@ -213,17 +213,10 @@
 								La más alta tecnología
 								en rastreo y ubicación
 								de activos.	
-			
-			.cover.prod-cont{style: "background-image: url(img/files.jpg);"}
-				.container{style: "width:90%; background-color: rgba(255,255,255,0.8); display: block;"}
-					.row
-						.col.l12.m12.s12
-							%h3.center.fuente-bold-It Conoce todos los beneficios que Inteligencia Satelital le ofrece
-					.row.center
-						%a{href: "beneficio.html"}
-							.col.l12.s12.center
-								%img{src: "img/more-info2.png", style: "width: 100px; height:100px;"}
-								%h4.rojo-text.fuente-Sbold Conocer más		
+			.parallax-container{style:"position:static;"}
+				.parallax{style:"position:static;"}
+					%img{src: "https://pbs.twimg.com/profile_images/704303939496353793/mIlqI8KR.jpg"}
+				
 
 			.page-footer.grey.darken-3{style:"width:100%;"}
 				.container{style:"width:90%;"}
@@ -260,5 +253,8 @@
 
 			%a.ancla{onclick: "gototop()"}
 				%img{src: "img/up-arrow.png"}
-
+		%script
+			$(document).ready(function() {
+			$('.parallax').parallax();
+			});
 		
