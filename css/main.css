@@ -122,6 +122,17 @@ i.bigger {
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
+@media screen and (max-width: 1000px) {
+  #Slidertext2 {
+    padding-top: 5%;
+    /*display: none;*/ }
+
+  #Slidertext5 {
+    padding-top: 20%;
+    /*display: none;*/ }
+
+  .slider-img {
+    opacity: 0.6; } }
 html, body {
   margin: 0px !important;
   padding: 0px !important;
@@ -131,7 +142,13 @@ img {
   max-height: 100%; }
 
 nav {
-  top: 2.05em; }
+  top: 1.85em; }
+
+#Slidertext2 {
+  padding-top: 20%; }
+
+#Slidertext5 {
+  padding-top: 15%; }
 
 nav, .nav {
   position: fixed;

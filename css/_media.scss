@@ -16,3 +16,19 @@
 	}
 	
 }
+
+@media screen and (max-width: 1000px){
+	#Slidertext2{
+		padding-top: 5%;
+		/*display: none;*/
+	}
+	#Slidertext5{
+		padding-top: 20%;
+		/*display: none;*/
+	}
+
+	.slider-img{
+		opacity: 0.6;
+	}
+}
+
