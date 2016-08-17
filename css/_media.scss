@@ -1,9 +1,12 @@
 //media sets
 
 @media screen and (max-width: 900px){
-	#navIdiomas{
+	.lang{
 		/*background-color: #000;*/
 		display: none;
+	}
+	#nava{
+		top: 0%;
 	}
 }
 

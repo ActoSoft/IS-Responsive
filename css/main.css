@@ -113,9 +113,12 @@ i.bigger {
   color: #FFFFFF !important; }
 
 @media screen and (max-width: 900px) {
-  #navIdiomas {
+  .lang {
     /*background-color: #000;*/
-    display: none; } }
+    display: none; }
+
+  #nava {
+    top: 0%; } }
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
