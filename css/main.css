@@ -260,11 +260,14 @@ li.side a{
   width: 100%;
   
 }
+*/
+.page-footer {
+  /*bottom: -313% !important;*/
+  position: relative;
+  display: block;
+  z-index: -1; }
 
-.page-footer{
-  bottom: -313% !important;
-  position: absolute;
-}
+/*
 .foote-page p{
   margin-left: 5%;
   margin-top: 0px;
@@ -338,65 +341,55 @@ li.side a{
 .topminus{
   top: -50%;
 }
+*/
+.ancla {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #FFF;
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  padding-top: 6px;
+  display: none;
+  z-index: 999;
+  transition-duration: .2s;
+  transition-property: background-color; }
 
-.ancla{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0,0,0,0.65);
-    color: #FFF;
-    cursor: pointer;
-    text-align: center;
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    padding-top: 6px;
-    display: none;
-    z-index: 999;
-    transition-duration: .2s;
-    transition-property: background-color;
-}
+.ancla:hover {
+  background-color: #E8504B; }
 
-.ancla:hover{
-  background-color: #E8504B;
-}
+.fuente-normals {
+  font-size: 1em; }
 
-.fuente-normals{
-  font-size: 1em;
-}
+.fuente-medium {
+  font-size: 1.5em; }
 
-.fuente-medium{
-  font-size: 1.5em;
-}
+.fuente-large {
+  font-size: 2em; }
 
-.fuente-large{
-  font-size: 2em;
-}
+td {
+  width: 15%; }
 
-td{
-  width: 15%;
-}
+.circleli {
+  list-style-type: disc; }
 
-.circleli{
-  list-style-type: disc;
-}
-
-.mainsolution{
+.mainsolution {
   font-weight: bold;
-  color: #e65100;
-}
+  color: #e65100; }
 
-.fuente-SI{
-  font-size: 1.5em;
-}
+.fuente-SI {
+  font-size: 1.5em; }
 
-.fuente-textosmall{
-  font-size: 1.2em;
-}
+.fuente-textosmall {
+  font-size: 1.2em; }
 
-.fuente-textobig{
-  font-size:1.4em;
-}
+.fuente-textobig {
+  font-size: 1.4em; }
 
+/*
 .slide-next{
     width: 40px;
     height: 40px;
@@ -406,7 +399,6 @@ td{
     text-align: center;
     position: fixed;
     right: 10px;
-    
     display: ;
     z-index: 999;
     transition-duration: .2s;

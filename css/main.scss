@@ -137,11 +137,14 @@ li.side a{
   width: 100%;
   
 }
-
+*/
 .page-footer{
-  bottom: -313% !important;
-  position: absolute;
+  /*bottom: -313% !important;*/
+  position: relative;
+  display: block;
+  z-index: -1;
 }
+/*
 .foote-page p{
   margin-left: 5%;
   margin-top: 0px;
@@ -221,7 +224,7 @@ li.side a{
 .topminus{
   top: -50%;
 }
-
+*/
 .ancla{
     width: 40px;
     height: 40px;
@@ -279,7 +282,7 @@ td{
 .fuente-textobig{
   font-size:1.4em;
 }
-
+/*
 .slide-next{
     width: 40px;
     height: 40px;
@@ -289,7 +292,6 @@ td{
     text-align: center;
     position: fixed;
     right: 10px;
-    
     display: ;
     z-index: 999;
     transition-duration: .2s;
