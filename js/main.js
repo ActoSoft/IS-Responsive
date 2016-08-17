@@ -1,7 +1,7 @@
 	$(document).ready(function(){
 	$(".slider").slider({
 		interval:2500,
-		indicators:true,
+		indicators:false,
 		transition:800
 
 	});

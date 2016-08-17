@@ -38,82 +38,149 @@
 				%li
 					%a.grey-text.text-darken-4{:href => "dispositivos/trackimo.html"} TRACKIMO
 
-			.nav.orange.darken-2#navIdiomas
-				%ul.row{style:"margin:0; float:right; width:100%"}
-					%li.lang.col.offset-s10.s1.white-text Español 
-					%li.lang.col.s1.white-text Inglés
-			
+			.fixeded
+				.nav.orange.darken-2#navIdiomas
+					%ul.row{style:"margin:0; width:100%"}
+						%li.lang.col.offset-s10.s1.white-text Español 
+						%li.lang.col.s1.white-text Inglés
+				
 
-			%nav#nava{style:"background-color:rgba(255,255,255,.6) !important; height:100px;"}
-				.nav-wrapper
-					%a.brand-logo{href: "index.html"}
-						%img{src: "img/Logo-Nuevo.png", style:" width:230px; height:auto; padding-top: 5px; padding-left: 50px; padding-bottom: 5px;"}
-					%a.button-collapse{href:"#", "data-activates":"mobile-demo"}
-						%i.material-icons.negro-text.bigger menu
-					%ul.right.hide-on-med-and-down{style: "padding-top:15px;"}
-						%li.nav-li
-							%a.negro-text.si{href: "#"} INICIO
-						%li.nav-li.hidden-text
-							%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
-						%li.nav-li
-							%a.negro-text.si{href: "#"} SOLUCIONES INDUSTRIALES
-						%li.nav-li.hidden-text
-							%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
-						%li.nav-li
-							%a.negro-text.si{href: "#"} DISPOSITIVOS
-						%li.nav-li.hidden-text
-							%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
-						%li.nav-li
-							%a.negro-text.si{href: "#"} SERVIDOR
-						%li.nav-li.hidden-text
-							%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
-						%li.nav-li
-							%a.negro-text.si{href: "#"} EMPRESA
-						%li.nav-li.hidden-text
-							%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
-						%li.nav-li.red.darken-2
-							%a.blanco-text{href: "#"} CONTACTO
+				%nav#nava{style:"background-color:rgba(255,255,255,.6) !important; height:100px;"}
+					.nav-wrapper
+						%a.brand-logo{href: "index.html"}
+							%img{src: "img/Logo-Nuevo.png", style:" width:230px; height:auto; padding-top: 5px; padding-left: 50px; padding-bottom: 5px;"}
+						%a.button-collapse{href:"#", "data-activates":"mobile-demo"}
+							%i.material-icons.negro-text.bigger menu
+						%ul.right.hide-on-med-and-down{style: "padding-top:15px;"}
+							%li.nav-li
+								%a.negro-text.texto-hover{href: "#"} INICIO
+							%li.nav-li.hidden-text
+								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
+							%li.nav-li
+								%a.negro-text.texto-hover{href: "#"} SOLUCIONES INDUSTRIALES
+							%li.nav-li.hidden-text
+								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
+							%li.nav-li
+								%a.negro-text.texto-hover{href: "#"} DISPOSITIVOS
+							%li.nav-li.hidden-text
+								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
+							%li.nav-li
+								%a.negro-text.texto-hover{href: "#"} SERVIDOR
+							%li.nav-li.hidden-text
+								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
+							%li.nav-li
+								%a.negro-text.texto-hover{href: "#"} EMPRESA
+							%li.nav-li.hidden-text
+								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
+							%li.nav-li.red.darken-2
+								%a.blanco-text{href: "#"} CONTACTO
 
-					%ul.side-nav{id:"mobile-demo", style:"z-index:10"}
-						%li.negro-text
-							%a{:href => "index.html"} Inicio
-						%li.negro-text
-							%a{:href => "soluciones-industriales.html"} Soluciones Industriales
-						%li.negro-tex
-							%a{:href => "dispositivos.html"} Dispositivos
-						%li.negro-text
-							%a{:href => "servidor.html"} Servidor
-						%li.negro-text
-							%a{:href => "empresa.html"} Empresa
-						%li.negro-text
-							%a{:href => "contacto.html"} Contacto
-
-			.slider
-				%ul.slides{style:"height:85%;"}
+						%ul.side-nav{id:"mobile-demo", style:"z-index:10"}
+							%li.negro-text
+								%a{:href => "index.html"} Inicio
+							%li.negro-text
+								%a{:href => "soluciones-industriales.html"} Soluciones Industriales
+							%li.negro-tex
+								%a{:href => "dispositivos.html"} Dispositivos
+							%li.negro-text
+								%a{:href => "servidor.html"} Servidor
+							%li.negro-text
+								%a{:href => "empresa.html"} Empresa
+							%li.negro-text
+								%a{:href => "contacto.html"} Contacto
+			.slider{style:"z-index:-2;"}
+				%ul.slides{style:"height:60%;"}
 					%li
-						%img.responsive-img.slider-img{src: "img/slider1.jpg", :alt => ""}
+						%img.responsive-img{src: "img/slider1.jpg", :alt => ""}
 						.caption.left-align{style: "top:20%;"}
 							%h2.blanco-bonito-text.fuente-Sbold-It{style: "padding-left: 0%;"} Inteligencia Satelital: 
-							%h3#Slidertext2.rojo-text.fuente-Sbold-It{style: "padding-left: 0%;"}"Tu Solución en Seguridad y Rastreo"
-							
+							%h3.rojo-text.fuente-Sbold-It{style: "display:inline-block; padding-left: 0%; padding-top:15%;"}"Tu Solución en Seguridad y Rastreo"
+
 					%li
-						%img.responsive-img.slider-img{src: "img/slider2.jpg", :alt => ""}
+						%img.responsive-img{src: "img/slider2.jpg", :alt => ""}
 						.caption.left-align{style: "top:20%; padding-left: 15%;"}
 							%h2.negro-text.fuente-Sbold-It 	¡Localiza tu flota!
 							
 					%li  
-						%img.responsive-img.slider-img{src: "img/slider3.jpg", :alt => ""}
+						%img.responsive-img{src: "img/slider3.jpg", :alt => ""}
 						.caption.left-align{style: "top:20%; "}
 							%h2.blanco-bonito-text.fuente-Sbold-It "Gestiona y Analiza las rutas de tus activos"
 
 					%li
-						%img.responsive-img.slider-img{src: "img/slider4.jpg", :alt => "", style: "opacity:0.7; filter: alpha(opacity=50);"}
-						#Slidertext5.caption.left-align
-							%h3.negro-text.fuente-Sbold-It Contamos con la mas alta tecnología en rastreo y localización
-			.sis
-				.blanco{style:"padding-top: 40%;"}
-					%h4.negro-text.fuente-bold.padding-top-2.padding-left Soluciones en Seguridad 
-			
-
-			
+						%img.responsive-img{src: "img/slider4.jpg", :alt => "", style: "opacity:0.7; filter: alpha(opacity=50);"}
+						.caption.left-align{style: "top:30%; "}
+							%h2.negro-text.fuente-Sbold-It Contamos con la mas alta tecnología en rastreo y localización
 				
+			.blanco
+				%h4.negro-text.fuente-bold.padding-top-2.padding-left Soluciones en Seguridad 
+			.cover.prod-cont{style: "background-image: url(img/back2.jpg);"}
+				.row
+					.col.l3.m6.s11.offset-s1
+						.card{style: "width: 80%;"}
+							.card-image.waves-effct.waves-light.waves-block
+								.carta-container
+									.carta
+										.front
+											%img.hover-img{:src => "img/transporte2.jpg", :alt => "",style:"height:200px;"}/
+										.back.activator
+											%a.blanco-text{href: "soluciones-industriales/transporte.html"}
+												%h5.padding-top Más información
+												%i.medium.material-icons.topminus present_to_all
+							.card-content
+								.card-title.rojo-text.fuente-Sbold-It.fuente-normals Transporte
+								%p.left.fuente-Sbold{style: "padding-top: 6%; padding-bottom: 6%;"} Gestiona tus flotas y mediante el rastreo, gestión y localización de todos tus activos
+					.col.l3.m6.s11.offset-s1
+						.card{style: "width: 80%;"}
+							.card-image.waves-effect.waves-light.waves-block
+								.carta-container
+									.carta
+										.front
+											%img.hover-img{:src => "img/seguridad3.jpg", :alt => "", style:"height:200px;"}/
+										.back.activator
+											%a.blanco-text{href: "soluciones-industriales/seguridad.html"}
+												%h5.padding-top Mas información
+												%i.medium.material-icons.topminus present_to_all
+							.card-content
+								.card-title.rojo-text.fuente-Sbold-It.fuente-normals Seguridad
+								%p.left.fuente-Sbold{style: "padding-top: 6%; padding-bottom: 6%;"} Prevee cualquier percance que pueda ocurrir teniendo ubicado todos tus activos
+					.col.l3.m6.s11.offset-s1
+						.card{style: "width: 80%;"}
+							.card-image.waves-effect.waves-light.waves-block
+								.carta-container
+									.carta
+										.front
+											%img.hover-img{:src => "img/pesada3.jpg", :alt => "", style:"height:200px;"}/
+										.back.activator
+											%a.blanco-text{href: "soluciones-industriales/heavy-duty.html"}
+												%h5.padding-top Más información
+												%i.medium.material-icons.topminus present_to_all
+							.card-content
+								.card-title.rojo-text.fuente-Sbold-It.fuente-normals Equipo Pesado
+								%p.left.fuente-Sbold{style: "padding-top: 6%; padding-bottom: 6%;"} Asegura Equipo costoso y ten la tranquilidad de saber en donde están cada uno de ellos		
+					.col.l3.m6.s11.offset-s1
+						.card{style: "width: 80%; z-index:1;"}
+							.card-image.waves-effect.waves-light.waves-block
+								.carta-container
+									.carta
+										.front
+											%img.hover-img{:src => "img/masproductos.jpg", :alt => "", style:"height:200px;"}/
+										.back.activator
+											%a.blanco-text{href: "soluciones-industriales.html"}
+												%h5.padding-top Más información
+												%i.medium.material-icons.topminus present_to_all
+							.card-content
+								.card-title.rojo-text.fuente-Sbold-It.fuente-normals Más productos
+								%p.left.fuente-Sbold{style: "padding-top: 12%; padding-bottom: 12%;"} Conoce todos los servicios en los cuáles podríamos ayudarte
+			.cover.blanco-bonito{style: "top:165%; background-image: url(img/trato.jpg);"}
+				.container
+					.row{style:"padding-top:3%;"}
+						.col.l12.m12.s12.offset-s1
+							%h3.center.fuente-bold{style: "display: block;"} Ponemos a su disposición todos nuestros servicios 
+							%h3.center.fuente-bold{style: "display: block;"} dándole la solución adecuada que usted necesita
+
+			.vacio
+				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe mollitia atque, quae eius quod accusamus officia hic. Tempora dolorem ad neque eos nesciunt consequuntur deleniti asperiores, soluta eius atque.
+				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe mollitia atque, quae eius quod accusamus officia hic. Tempora dolorem ad neque eos nesciunt consequuntur deleniti asperiores, soluta eius atque.
+				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe mollitia atque, quae eius quod accusamus officia hic. Tempora dolorem ad neque eos nesciunt consequuntur deleniti asperiores, soluta eius atque.
+				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe mollitia atque, quae eius quod accusamus officia hic. Tempora dolorem ad neque eos nesciunt consequuntur deleniti asperiores, soluta eius atque.
+				%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe mollitia atque, quae eius quod accusamus officia hic. Tempora dolorem ad neque eos nesciunt consequuntur deleniti asperiores, soluta eius atque.
