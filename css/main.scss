@@ -2,6 +2,18 @@
 @import "colores";
 @import "media";
 
+.fixeded{
+  position: fixed;
+  width: 100%;
+  display: block;
+  top:0 ;
+}
+
+.vacio{
+  display: block;
+  padding-top: 1px;
+}
+
 // Etiquetas
 
 html, body{
@@ -13,18 +25,30 @@ html, body{
 img{
   max-height: 100%;
 }
+/*
 nav{
-  top:2.05em;
+
+  position:fixed;
+  transition: .4s;
 }
-nav, .nav{
+
+#Slidertext2{
+  padding-top:20%;
+}
+
+#Slidertext5{
+  padding-top:15%;
+
+}
+.nav{
   position:fixed;
   width: 100%;
-  z-index:5;
+  top:0%;
   transition: .4s;
 }
 nav ul{ 
   transition:.4s;
-}
+}*/
 .hidden-text:hover{
   background-color:inherit;
   color:inherit;
@@ -34,10 +58,12 @@ nav ul{
   padding:.1% !important;
   padding-bottom:.4% !important;
 }
-nav ul li:hover a.si{
+
+nav ul li:hover a.texto-hover{
   background-color:#333333;
   color: #F2F2F2 !important;
 }
+/*
 .side-m{
   border-right:1px solid #BDBDBD;
 }
@@ -46,7 +72,7 @@ li.side{
   padding-top:30px;
 }
 li.side a{
-  /*color: #FF9416;*/
+  color: #FF9416;
   color: #333333;
 }
 
@@ -55,23 +81,36 @@ li.side a{
 .galada{
   font-family: 'Galada', cursive !important;
 }
-
-.cover{
-  z-index: -1;
-  position: absolute;
-  top:7%;
+*/
+.fixeded{
+  position: fixed;
   width: 100%;
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  display: block;
+  top:0 ;
+}
+.cover{
+  z-index: -50 !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-size: cover !important;
+  webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+}
+
+.footer-copyright{
+  font-weight: 300;
+  overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255,255,255,0.8);
 }
 
 .slider{
-  position: absolute;
-  height: 100% !important;
-}
 
+  position: relative;
+}
+/*
 .slider2{
   position: absolute;
   height: 100% !important;
@@ -81,14 +120,14 @@ li.side a{
   background-size:100% 100%;
   background-repeat:no-repeat;
 }
-
+*/
 .containeresponsive{
   width:100%;
   max-width: 1400px;
-  margin: 0 auto;
-
+  margin:0 auto;
+  overflow: none;
 }
-
+/*
 .welcome{
   width: 100%;
   top: 110%;
@@ -106,7 +145,7 @@ li.side a{
   position: absolute;
 }
 
-/*.foote-page{
+.foote-page{
   bottom: -174% !important;
   height:50px;
   line-height:50px;
@@ -115,23 +154,30 @@ li.side a{
   position: absolute;
   width: 100%;
   
-}*/
-
-.page-footer{
-  bottom: -313% !important;
-  position: absolute;
 }
-/*.foote-page p{
+*/
+.page-footer{
+  /*bottom: -313% !important;*/
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+/*
+.foote-page p{
   margin-left: 5%;
   margin-top: 0px;
 }
-*/
+
 .no-hover:hover{
   background-color: inherit;
   color: #333333;
-}
+}*/
 .prod-cont{
-  padding:50px;
+  padding:20px;
+  text-align: center;
+  z-index: -1;
+  position: relative;
+   
 }
 
 .carta-container{
@@ -146,6 +192,7 @@ li.side a{
   height: 200px;
   transition: all 1s ease;
   transform-style: preserve-3d;
+  z-index: 1;
 }
 .carta:hover{
   transform: rotateY(180deg);
@@ -191,10 +238,11 @@ li.side a{
 .back2{
   transform: rotateY(180deg);
 }
+/*
 .topminus{
   top: -50%;
 }
-
+*/
 .ancla{
     width: 40px;
     height: 40px;
@@ -252,7 +300,7 @@ td{
 .fuente-textobig{
   font-size:1.4em;
 }
-
+/*
 .slide-next{
     width: 40px;
     height: 40px;
@@ -262,9 +310,9 @@ td{
     text-align: center;
     position: fixed;
     right: 10px;
-    
-    /*display: ;*/
+    display: ;
     z-index: 999;
     transition-duration: .2s;
     transition-property: background-color;
 }
+*/

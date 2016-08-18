@@ -1,12 +1,19 @@
 //media sets
 
 @media screen and (max-width: 900px){
+	.fixeded{
+		position: static !important;
+	}
 	.lang{
 		/*background-color: #000;*/
 		display: none;
 	}
 	#nava{
 		top: 0%;
+	}
+
+	#Disposicion1{
+		color: #fff;
 	}
 }
 
