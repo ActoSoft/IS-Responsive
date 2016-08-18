@@ -89,10 +89,10 @@
         <nav id='nava' style='background-color:rgba(255,255,255,.6); height:100px;'>
           <div class='nav-wrapper' style='background-color:transparent;'>
             <a class='brand-logo' href='index.html'>
-              <img src='img/Logo-Nuevo.png' style=' width:230px; height:auto; padding-top: 5px; padding-left: 50px; padding-bottom: 5px;'>
+              <img class='logoImg' src='img/Logo-Nuevo.png'>
             </a>
-            <a class='button-collapse' data-activates='mobile-demo' style='padding-top:15px;'>
-              <i class='material-icons red-text darken-2'>menu</i>
+            <a class='button-collapse' data-activates='mobile-demo' style='padding-top:20px; padding-left:20px;'>
+              <i class='material-icons red-text darken-2 medium'>menu</i>
             </a>
             <ul class='right hide-on-med-and-down' style='padding-top:15px;'>
               <li class='nav-li'>
@@ -130,24 +130,68 @@
               </li>
             </ul>
             <ul class='side-nav' id='mobile-demo'>
-              <li class='negro-text'>
-                <a href='index.html'>Inicio</a>
+              <li>
+                <div class='userView'>
+                  <img class='background responsive-img padding-top' src='img/Logo-Nuevo.png'>
+                </div>
               </li>
               <li class='negro-text'>
-                <a href='soluciones-industriales.html'>Soluciones Industriales</a>
+                <a class='waves-effect' href='index.html' style=':hover: color:red;'>Inicio</a>
               </li>
-              <li class='negro-tex'>
-                <a href='dispositivos.html'>Dispositivos</a>
-              </li>
+              <li class='divider'></li>
+              <li class='negro-text dropdown-button' data-activates='soluciones-drop'>&nbsp&nbsp&nbsp&nbspSoluciones Industriales</li>
+              <li class='divider'></li>
+              <ul class='dropdown-content' id='soluciones-drop'>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales.html'>Soluciones Industriales</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/gestion-de-flotas.html'>Gestión de Flotas</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/seguridad-personal.html'>Seguridad Personal</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/seguimiento-de-personal.html'>Seguimiento de personal</a>
+                </li>
+              </ul>
+              <li class='negro-text dropdown-button' data-activates='dispositivos-drop'>&nbsp&nbsp&nbsp&nbspDispositivos</li>
+              <li class='divider'></li>
+              <ul class='dropdown-content' id='dispositivos-drop'>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos.html' style='text-align:center;'>Todos</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/gps-tracker.html' style='text-align:center;'>GPS Tracker</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/syrus-sy2210.html' style='text-align:center;'>Syrus SY2210</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/meitrack-vt310.html' style='text-align:center;'>Meitrack VT310</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/gps-tracker-vehiculos.html' style='text-align:center;'>GPS Tracker Automovil</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/mini-tracker.html' style='text-align:center;'>Mini Tracker</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/trackimo.html' style='text-align:center;'>Trackimo</a>
+                </li>
+              </ul>
               <li class='negro-text'>
-                <a href='servidor.html'>Servidor</a>
+                <a class='waves-effect' href='servidor.html'>Servidor</a>
               </li>
+              <li class='divider'></li>
               <li class='negro-text'>
-                <a href='empresa.html'>Empresa</a>
+                <a class='waves-effect' href='empresa.html'>Empresa</a>
               </li>
+              <li class='divider'></li>
               <li class='negro-text'>
-                <a href='contacto.html'>Contacto</a>
+                <a class='waves-effect' href='contacto.html'>Contacto</a>
               </li>
+              <li class='divider'></li>
             </ul>
           </div>
         </nav>

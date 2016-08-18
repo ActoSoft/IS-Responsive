@@ -68,9 +68,9 @@
 				%nav#nava{style:"background-color:rgba(255,255,255,.6); height:100px;"}
 					.nav-wrapper{style:"background-color:transparent;"}
 						%a.brand-logo{href: "index.html"}
-							%img{src: "img/Logo-Nuevo.png", style:" width:230px; height:auto; padding-top: 5px; padding-left: 50px; padding-bottom: 5px;"}
-						%a.button-collapse{style: "padding-top:15px;","data-activates":"mobile-demo"}
-							%i.material-icons.red-text.darken-2 menu
+							%img.logoImg{src: "img/Logo-Nuevo.png"}
+						%a.button-collapse{style: "padding-top:20px; padding-left:20px;","data-activates":"mobile-demo"}
+							%i.material-icons.red-text.darken-2.medium menu
 						%ul.right.hide-on-med-and-down{style: "padding-top:15px;"}
 							%li.nav-li
 								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "#"} INICIO
@@ -96,18 +96,61 @@
 								%a.blanco-text{href: "#"} CONTACTO
 
 						%ul.side-nav{id:"mobile-demo"}
+							%li
+								.userView
+									%img.background.responsive-img.padding-top{src: "img/Logo-Nuevo.png"}
 							%li.negro-text
-								%a{:href => "index.html"} Inicio
+								%a.waves-effect{:href => "index.html", style:":hover: color:red;"} Inicio
+							%li.divider
+							%li.negro-text.dropdown-button{"data-activates":"soluciones-drop"} &nbsp&nbsp&nbsp&nbspSoluciones Industriales
+							%li.divider
+							%ul#soluciones-drop.dropdown-content
+								%li.negro-text
+									%a.waves-effect{:href => "soluciones-industriales.html"}Soluciones Industriales
+								%li.negro-text
+									%a.waves-effect{:href => "soluciones-industriales/gestion-de-flotas.html"} Gestión de Flotas
+								%li.negro-text
+									%a.waves-effect{:href => "soluciones-industriales/seguridad-personal.html"} Seguridad Personal
+								%li.negro-text
+									%a.waves-effect{:href => "soluciones-industriales/seguimiento-de-personal.html"} Seguimiento de personal
+							%li.negro-text.dropdown-button{"data-activates":"dispositivos-drop"} &nbsp&nbsp&nbsp&nbspDispositivos
+							%li.divider
+							%ul#dispositivos-drop.dropdown-content
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos.html"} Todos
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/gps-tracker.html"} GPS Tracker
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/syrus-sy2210.html"} Syrus SY2210
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/meitrack-vt310.html"} Meitrack VT310
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/gps-tracker-vehiculos.html"} GPS Tracker Automovil 
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/mini-tracker.html"} Mini Tracker
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "dispositivos/trackimo.html"} Trackimo
+								
 							%li.negro-text
-								%a{:href => "soluciones-industriales.html"} Soluciones Industriales
-							%li.negro-tex
-								%a{:href => "dispositivos.html"} Dispositivos
+								%a.waves-effect{:href => "servidor.html"} Servidor
+							%li.divider
 							%li.negro-text
-								%a{:href => "servidor.html"} Servidor
+								%a.waves-effect{:href => "empresa.html"} Empresa
+							%li.divider
 							%li.negro-text
-								%a{:href => "empresa.html"} Empresa
-							%li.negro-text
-								%a{:href => "contacto.html"} Contacto
+								%a.waves-effect{:href => "contacto.html"} Contacto
+							%li.divider
 			.slider{style:"z-index:-2;"}
 				%ul.slides{style:"height:60%;"}
 					%li
