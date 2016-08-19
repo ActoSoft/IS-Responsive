@@ -96,9 +96,11 @@ li.side a{
   width: 100%;
   display: block;
   top:0 ;
+  padding-bottom: 0;
 }
 .cover{
   z-index: -50 !important;
+  background-size: 100% 100%;
   background-attachment: fixed !important;
   background-position: center !important;
   background-size: cover !important;
@@ -187,6 +189,16 @@ li.side a{
   z-index: -1;
   position: relative;
    
+}
+.imageback{
+  padding: 0;
+  margin: 0;
+  background-size: cover !important;
+  width: 100%;
+  height: 50%;
+  z-index: -40;
+  position: relative;
+  background-repeat: no-repeat;
 }
 
 .carta-container{
