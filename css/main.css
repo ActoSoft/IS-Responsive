@@ -126,8 +126,14 @@ i.bigger {
   #nava {
     top: 0%; }
 
+  #Slidertext5 {
+    padding-top: 0 !important; }
+
   #Disposicion1 {
-    color: #fff; } }
+    color: #fff; }
+
+  .slider-img {
+    opacity: 0.6; } }
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
@@ -137,9 +143,8 @@ i.bigger {
   display: block;
   top: 0; }
 
-.vacio {
-  display: block;
-  padding-top: 1px; }
+#Slidertext5 {
+  padding-top: 10%; }
 
 html, body {
   margin: 0px !important;
