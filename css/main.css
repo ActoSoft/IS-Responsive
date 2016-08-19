@@ -232,7 +232,8 @@ li.side a{
   background-size: cover !important;
   webkit-background-size: cover !important;
   -moz-background-size: cover !important;
-  -o-background-size: cover !important; }
+  -o-background-size: cover !important;
+  height: auto !important; }
 
 .footer-copyright {
   font-weight: 300;
@@ -315,9 +316,10 @@ li.side a{
 .imageback {
   padding: 0;
   margin: 0;
+  background-color: #e0e0e0;
   background-size: cover !important;
   width: 100%;
-  height: 50%;
+  height: auto !important;
   z-index: -40;
   position: relative;
   background-repeat: no-repeat; }
