@@ -96,6 +96,15 @@
 								%a.blanco-text{href: "contacto.html"} CONTACTOO
 
 						%ul.side-nav{id:"mobile-demo"}
+							%ul#soluciones-drop.dropdown-content{style:"z-index: 2;"}
+								%li.negro-text
+									%a{:href => "soluciones-industriales.html"}Soluciones Industriales
+								%li.negro-text
+									%a{:href => "soluciones-industriales/gestion-de-flotas.html"} Gestión de Flotas
+								%li.negro-text
+									%a{:href => "soluciones-industriales/seguridad-personal.html"} Seguridad Personal
+								%li.negro-text
+									%a{:href => "soluciones-industriales/seguimiento-de-personal.html"} Seguimiento de personal
 							%li
 								.userView
 									%img.background.responsive-img.padding-top{src: "img/Logo-Nuevo.png"}
@@ -104,18 +113,10 @@
 							%li.divider
 							%li.negro-text.dropdown-button{"data-activates":"soluciones-drop"} &nbsp&nbsp&nbsp&nbspSoluciones Industriales
 							%li.divider
-							%ul#soluciones-drop.dropdown-content
-								%li.negro-text
-									%a.waves-effect{:href => "soluciones-industriales.html"}Soluciones Industriales
-								%li.negro-text
-									%a.waves-effect{:href => "soluciones-industriales/gestion-de-flotas.html"} Gestión de Flotas
-								%li.negro-text
-									%a.waves-effect{:href => "soluciones-industriales/seguridad-personal.html"} Seguridad Personal
-								%li.negro-text
-									%a.waves-effect{:href => "soluciones-industriales/seguimiento-de-personal.html"} Seguimiento de personal
+								
 							%li.negro-text.dropdown-button{"data-activates":"dispositivos-drop"} &nbsp&nbsp&nbsp&nbspDispositivos
 							%li.divider
-							%ul#dispositivos-drop.dropdown-content
+							%ul#dispositivos-drop.dropdown-content{style:"z-index: 2;"}
 								%li.negro-text
 									%a.waves-effect{style:"text-align:center;", :href => "dispositivos.html"} Todos
 								
