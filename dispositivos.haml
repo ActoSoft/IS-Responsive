@@ -155,31 +155,31 @@
 
 			.cover.prod-cont.orange.darken-2{style: "height: 300px;"}
 				%h2.blanco-bonito-text.fuente-Bold-It.center{style:"padding-top:2%; padding-bottom:1%;"} Dispositivos Inteligencia Satelital
-			.cover.prod-cont
+			.prod-cont{style: "z-index: 1;"}
 				.container{style:"width: 90%;"}
 					.row
 						.col.l12.m12.s12
 							%h4.fuente-Sbold-It.negro-text Inteligencia Satelital actualmente cuenta con los 6 dispositivos más sofisticados del mercado, con características propias con el fin de adaptarse a sus necesidades.
 					.row
 						.col.l12.s12
-							%table.centered.responsive-table.bordered
+							%table.centered.bordered
 								%thead
 									%tr
 										%td.center Imagen
 										%td.center Dispositivo GPS
 										%td.center Aplicación
-										%td.center Duración de batería
-										%td.center Tipo de Dispositivo
+										%td.center.no-importante-table Duración de batería
+										%td.center.no-importante-table Tipo de Dispositivo
 								%tbody
 									%tr
-										%td
-											%a{href: "dispositivos/gps-tracker.html"}
+										%a{href: "dispositivos/gps-tracker.html"}
+											%td
 												%img.responsive-img{src: "img/gpstracker.jpg"}
 										%td
 											%a{href: "dispositivos/gps-tracker.html"} GPS Tracker
 										%td Motos
-										%td X
-										%td GPS / GSM /GPRS / SMS /DTMF
+										%td.no-importante-table X
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
 									%tr
 										%td
 											%a{href: "dispositivos/syrus-sy2210.html"}
@@ -187,8 +187,8 @@
 										%td
 											%a{href: "dispositivos/syrus-sy2210.html"} Syrus SY2210
 										%td Vehicular
-										%td X
-										%td GPS / GSM /GPRS / SMS /DTMF
+										%td.no-importante-table X
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
 									%tr
 										%td
 											%a{href: "dispositivos/meitrack-vt310.html"}
@@ -196,8 +196,8 @@
 										%td
 											%a{href: "dispositivos/meitrack-vt310.html"} Meitrack vt310
 										%td Vehículos a Gran Escala
-										%td X
-										%td GPS / GSM /GPRS / SMS /DTMF
+										%td.no-importante-table X
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
 									%tr
 										%td
 											%a{href: "dispositivos/gps-tracker-vehiculos.html"}
@@ -205,8 +205,8 @@
 										%td
 											%a{href: "dispositivos/gps-tracker-vehiculos.html"} GPS Tracker
 										%td Vehicular
-										%td X
-										%td GPS / GSM /GPRS / SMS /DTMF
+										%td.no-importante-table X
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
 									%tr
 										%td
 											%a{href: "dispositivos/mini-tracker.html"}
@@ -214,8 +214,8 @@
 										%td
 											%a{href: "dispositivos/mini-tracker.html"} Mini Tracker
 										%td Personal
-										%td Una Semana
-										%td GPS / GSM /GPRS / SMS /DTMF
+										%td.no-importante-table Una Semana
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
 									%tr
 										%td
 											%a{href: "dispositivos/trackimo.html"}
@@ -223,9 +223,9 @@
 										%td
 											%a{href: "dispositivos/trackimo.html"} Trackimo
 										%td Personal
-										%td X
-										%td GPS / GSM /GPRS / SMS /DTMF
-
+										%td.no-importante-table X
+										%td.no-importante-table GPS / GSM /GPRS / SMS /DTMF
+			}
 			
 			.page-footer.grey.darken-3{style:"width:100%;"}
 				.container{style:"width:90%;"}
