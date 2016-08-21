@@ -7,6 +7,8 @@
   width: 100%;
   display: block;
   top:0 ;
+  z-index: 50;
+
 }
 
 #Slidertext5{
@@ -91,15 +93,9 @@ li.side a{
   font-family: 'Galada', cursive !important;
 }
 */
-.fixeded{
-  position: fixed;
-  width: 100%;
-  display: block;
-  top:0 ;
-  padding-bottom: 0;
-}
+
 .cover{
-  z-index: -50 !important;
+  z-index: -1 !important;
   background-size: 100% 100%;
   background-attachment: fixed !important;
   background-position: center !important;
@@ -170,7 +166,7 @@ li.side a{
 */
 .page-footer{
   /*bottom: -313% !important;*/
-  position: relative;
+  position: static;
   display: block;
   z-index: -1;
 }
@@ -188,8 +184,12 @@ li.side a{
   padding:20px;
   text-align: center;
   z-index: -1;
-  position: relative;
+  position: static;
    
+}
+.padding-arriba{
+  padding-top:100px;
+
 }
 .imageback{
   padding: 0;
