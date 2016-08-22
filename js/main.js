@@ -11,11 +11,17 @@
 		
 		 closeOnClick: true
 	});
+
 	$(".dropdown-button").dropdown({
 		hover: true,
 		belowOrigin: true,
 		constrain_width: false
 	});
+	
+    $('.carousel.carousel-slider').carousel({
+    	full_width: true
+    });
+        
 	/*$(".nav").css({ "background-color":"#333333",
 									"box-shadow":"none",
 									"height": "100px"
