@@ -36,6 +36,12 @@
 
 }
 
+@media screen and (max-width: 500px){
+	#ServerLink{
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 1175px){
 	.hidden-text{
 		display: none;
