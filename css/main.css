@@ -141,11 +141,20 @@ i.bigger {
   #relleno {
     display: none; }
 
+  #imagensol {
+    padding-top: 20px !important; }
+
+  .side-m {
+    border-right: 0px !important; }
+
   #infocontacto {
     display: none; }
 
   #envioform {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  #fondofixed {
+    display: none; } }
 @media screen and (max-width: 500px) {
   #ServerLink {
     width: 100%; } }
@@ -214,19 +223,17 @@ nav ul li:hover a.texto-hover {
   background-color: #333333;
   color: #F2F2F2 !important; }
 
-/*
-.side-m{
-  border-right:1px solid #BDBDBD;
-}
+.side-m {
+  border-right: 1px solid #BDBDBD; }
 
-li.side{
-  padding-top:30px;
-}
-li.side a{
+li.side {
+  padding-top: 30px; }
+
+li.side a {
   color: #FF9416;
-  color: #333333;
-}
+  color: #333333; }
 
+/*
 //Fuentes
 
 .galada{
@@ -390,11 +397,12 @@ li.side a{
 .back2 {
   transform: rotateY(180deg); }
 
-/*
-.topminus{
-  top: -50%;
-}
-*/
+.topminus {
+  top: -50%; }
+
+#imagensol {
+  padding-top: 150px; }
+
 .ancla {
   width: 40px;
   height: 40px;
