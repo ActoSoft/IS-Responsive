@@ -2,7 +2,7 @@
 %html{:lang => "es"}
 	%head
 		%meta{:charset => "UTF-8"}
-		%title Seguimiento de Personal
+		%title Transporte
 		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/icon?family=Material+Icons"}/
 		%link{:rel => "stylesheet", :href => "../css/materialize.min.css"}
 		%link{:rel => "stylesheet", :href => "../css/main.css"}
@@ -85,7 +85,7 @@
 							%li.divider
 							%ul#soluciones-drop.dropdown-content{style:"z-index: 2;"}
 								%li.negro-text
-									%a.waves-effect{:href => "soluciones-industriales.html"}Soluciones Industriales
+									%a.waves-effect{:href => "../soluciones-industriales.html"}Soluciones Industriales
 								%li.negro-text
 									%a.waves-effect{:href => "gestion-de-flotas.html"} Gestión de Flotas
 								%li.negro-text
@@ -130,12 +130,6 @@
 							%li.negro-text
 								%a.waves-effect{:href => "../contacto.html"} Contacto
 							%li.divider
-		-#.cover{style:"top:15.5%; width: 100%; position: absolute;"}
-		-#	.orange.darken-2{style: "height: 60%;"}
-		-#		%h2.blanco-bonito-text.fuente-Bold-It.center{style:"padding-top:2%; padding-bottom:1%;"} Dispositivos Inteligencia Satelital
-		-#		%p.blanco-bonito-text.fuente-Bold-It.center
-		-#			%b Una cosa aquí
-		-#			Otra aquí, que es como una descripcion de la pagina
 		.cover#fondofixed{style: "top:0%; height:45%; position: fixed;"}
 			%img{src: "../img/solucionesback3.jpg", style: "width:100%; !important; position: static; height: 100%; opacity: 0.6;"}
 		.prod-cont.row#imagensol
@@ -166,7 +160,7 @@
 							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Dispositivo 3
 					
 
-			%section.section.grey-text.text-darken-4.col.hide-on-small.m3
+			%section.section.grey-text.text-darken-4.col.hide-on-small.m12.s12.l3
 				%article.container{style:"width:100%;"}
 					%ul
 						%li.side
