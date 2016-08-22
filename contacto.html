@@ -2,7 +2,7 @@
 <html lang='es'>
   <head>
     <meta charset='UTF-8'>
-    <title>Contacto</title>
+    <title>Inteligencia Satelital</title>
     <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
     <link href='css/materialize.min.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
@@ -11,135 +11,179 @@
     <link href='https://www.fuelcdn.com/fonts/proxima-nova.css' rel='stylesheet'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
     <script src='js/materialize.min.js'></script>
+    <script src='js/facebookapi.js'></script>
     <script src='js/main.js'></script>
     <script src='js/random-number.js'></script>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
-  <body class='grey lighten-4'>
-    <ul class='dropdown-content' id='dropdown1' style='background-color:rgba(255,255,255,.7) !important;'>
-      <li>
-        <a class='grey-text text-darken-4' href='soluciones-industriales/gestion-de-flotas.html'>GESTION DE FLOTAS</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='soluciones-industriales/seguridad-personal.html'>SEGURIDAD PERSONAL</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='soluciones-industriales/seguimiento-de-personal.html'>SEGUIMIENTO DE PERSONAL</a>
-      </li>
-    </ul>
-    <ul class='dropdown-content' id='dropdown2' style='background-color:rgba(255,255,255,.7) !important;'>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/gps-tracker.html'>GPS TRACKER</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/syrus-sy2210.html'>SYRUS SY2210</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/meitrack-vt310.html'>MEITRACK VT310</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/gps-tracker-vehiculos.html'>GPS TRACKER VEHICULOS</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/mini-tracker.html'>MINI TRACKER</a>
-      </li>
-      <li>
-        <a class='grey-text text-darken-4' href='dispositivos/trackimo.html'>TRACKIMO</a>
-      </li>
-    </ul>
-    <div class='nav orange darken-2' style='z-index:50;'>
-      <ul class='row' style='margin:0; float:right; width:100%'>
-        <li class='lang col offset-s10 s1 white-text'>Español</li>
-        <li class='lang col s1 white-text'>Inglés</li>
+  <body>
+    <div class='containeresponsive'>
+      <ul class='dropdown-content' id='dropdown1' style='background-color:rgba(255,255,255,.7) !important;'>
+        <li>
+          <a class='grey-text text-darken-4' href='soluciones-industriales/gestion-de-flotas.html'>GESTION DE FLOTAS</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='soluciones-industriales/seguridad-personal.html'>SEGURIDAD PERSONAL</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='soluciones-industriales/seguimiento-de-personal.html'>SEGUIMIENTO DE PERSONAL</a>
+        </li>
       </ul>
-      <nav style='background-color:rgba(255,255,255,.6) !important; z-index:50; height:15%;'>
-        <div class='nav-wrapper hide-on-med-and-down' style='background-color: transparent; !important;'>
-          <a href='index.html'>
-            <img alt='' class='padding-left' src='img/Logo-Nuevo.png' style='padding-bottom: 5px; position: fixed; width: 20%; margin-top:0.3%;'>
-          </a>
-          <ul class='right' id='nav-mobile' style='padding-top:1.5%;'>
-            <li class='nav-li no-padding'>
-              <a class='negro-text si fuente-normals fuente-Sbold' href='index.html'>INICIO</a>
-            </li>
-            <li class='nav-li hidden-text'>
-              <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
-            </li>
-            <li class='nav-li no-padding'>
-              <a class='negro-text si dropdown-button fuente-normals fuente-Sbold' data-activates='dropdown1' href='soluciones-industriales.html'>SOLUCIONES INDUSTRIALES</a>
-            </li>
-            <li class='nav-li no-padding hidden-text'>
-              <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
-            </li>
-            <li class='nav-li no-padding'>
-              <a class='negro-text si dropdown-button fuente-normals fuente-Sbold' data-activates='dropdown2' href='dispositivos.html'>DISPOSITIVOS</a>
-            </li>
-            <li class='nav-li no-padding hidden-text'>
-              <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
-            </li>
-            <li class='nav-li no-padding'>
-              <a class='negro-text si fuente-normals fuente-Sbold' href='servidor.html'>SERVIDOR</a>
-            </li>
-            <li class='nav-li no-padding hidden-text'>
-              <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
-            </li>
-            <li class='nav-li no-padding'>
-              <a class='negro-text si fuente-normals fuente-Sbold' href='empresa.html'>EMPRESA</a>
-            </li>
-            <li class='nav-li no-padding hidden-text'>
-              <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
-            </li>
-            <li class='nav-li'>
-              <a class='white-text red darken-2 fuente-normals fuente-Sbold' href='contacto.html'>CONTACTO</a>
-            </li>
+      <ul class='dropdown-content' id='dropdown2' style='background-color:rgba(255,255,255,.7) !important;'>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/gps-tracker.html'>GPS TRACKER</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/syrus-sy2210.html'>SYRUS SY2210</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/meitrack-vt310.html'>MEITRACK VT310</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/gps-tracker-vehiculos.html'>GPS TRACKER VEHICULOS</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/mini-tracker.html'>MINI TRACKER</a>
+        </li>
+        <li>
+          <a class='grey-text text-darken-4' href='dispositivos/trackimo.html'>TRACKIMO</a>
+        </li>
+      </ul>
+      <div class='fixeded'>
+        <div class='nav orange darken-2' id='navIdiomas'>
+          <ul class='row' style='margin:0; width:100%'>
+            <li class='lang col offset-s10 s1 white-text'>Español</li>
+            <li class='lang col s1 white-text'>Inglés</li>
           </ul>
         </div>
-        <div class='nav-wrapper'>
-          <a class='brand-logo left' href='#'>
-            <img alt='' src='img/Logo-Nuevo.png' style='position:absolute; '>
-          </a>
-          <a class='button-collapse' data-activates='mobile' href='#'>
-            <i class='material-icons negro-text bigger'>menu</i>
-          </a>
-          <ul class='side-nav' id='mobile' style='z-index:10'>
-            <li class='negro-text'>
-              <a href='index.html'>Inicio</a>
-            </li>
-            <li class='negro-text'>
-              <a href='soluciones-industriales.html'>Soluciones Industriales</a>
-            </li>
-            <li class='negro-tex'>
-              <a href='dispositivos.html'>Dispositivos</a>
-            </li>
-            <li class='negro-text'>
-              <a href='servidor.html'>Servidor</a>
-            </li>
-            <li class='negro-text'>
-              <a href='empresa.html'>Empresa</a>
-            </li>
-            <li class='negro-text'>
-              <a href='contacto.html'>Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav id='nava' style='background-color:rgba(255,255,255,.6); height:100px;'>
+          <div class='nav-wrapper' style='background-color:transparent;'>
+            <a class='brand-logo' href='index.html'>
+              <img class='logoImg' src='img/Logo-Nuevo.png'>
+            </a>
+            <a class='button-collapse' data-activates='mobile-demo' style='padding-top:20px; padding-left:20px;'>
+              <i class='material-icons red-text darken-2 medium'>menu</i>
+            </a>
+            <ul class='right hide-on-med-and-down' style='padding-top:15px;'>
+              <li class='nav-li'>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='index.html'>INICIO</a>
+              </li>
+              <li class='nav-li hidden-text'>
+                <a class='negro-text' href=''>&nbsp&nbsp&nbsp</a>
+              </li>
+              <li class='nav-li'>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown1' href='soluciones-industriales.html'>SOLUCIONES INDUSTRIALES</a>
+              </li>
+              <li class='nav-li hidden-text'>
+                <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
+              </li>
+              <li class='nav-li'>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown2' href='dispositivos.html'>DISPOSITIVOS</a>
+              </li>
+              <li class='nav-li hidden-text'>
+                <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
+              </li>
+              <li class='nav-li'>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='servidor.html'>SERVIDOR</a>
+              </li>
+              <li class='nav-li hidden-text'>
+                <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
+              </li>
+              <li class='nav-li'>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='empresa.html'>EMPRESA</a>
+              </li>
+              <li class='nav-li hidden-text'>
+                <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
+              </li>
+              <li class='nav-li red darken-2'>
+                <a class='blanco-text' href='contacto.html'>CONTACTO</a>
+              </li>
+            </ul>
+            <ul class='side-nav' id='mobile-demo'>
+              <li>
+                <div class='userView'>
+                  <img class='background responsive-img padding-top' src='img/Logo-Nuevo.png'>
+                </div>
+              </li>
+              <li class='negro-text'>
+                <a class='waves-effect' href='index.html' style=':hover: color:red;'>Inicio</a>
+              </li>
+              <li class='divider'></li>
+              <li class='negro-text dropdown-button' data-activates='soluciones-drop'>&nbsp&nbsp&nbsp&nbspSoluciones Industriales</li>
+              <li class='divider'></li>
+              <ul class='dropdown-content' id='soluciones-drop' style='z-index: 2;'>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales.html'>Soluciones Industriales</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/gestion-de-flotas.html'>Gestión de Flotas</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/seguridad-personal.html'>Seguridad Personal</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='soluciones-industriales/seguimiento-de-personal.html'>Seguimiento de personal</a>
+                </li>
+              </ul>
+              <li class='negro-text dropdown-button' data-activates='dispositivos-drop'>&nbsp&nbsp&nbsp&nbspDispositivos</li>
+              <li class='divider'></li>
+              <ul class='dropdown-content' id='dispositivos-drop' style='z-index: 2;'>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos.html' style='text-align:center;'>Todos</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/gps-tracker.html' style='text-align:center;'>GPS Tracker</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/syrus-sy2210.html' style='text-align:center;'>Syrus SY2210</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/meitrack-vt310.html' style='text-align:center;'>Meitrack VT310</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/gps-tracker-vehiculos.html' style='text-align:center;'>GPS Tracker Automovil</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/mini-tracker.html' style='text-align:center;'>Mini Tracker</a>
+                </li>
+                <li class='negro-text'>
+                  <a class='waves-effect' href='dispositivos/trackimo.html' style='text-align:center;'>Trackimo</a>
+                </li>
+              </ul>
+              <li class='negro-text'>
+                <a class='waves-effect' href='servidor.html'>Servidor</a>
+              </li>
+              <li class='divider'></li>
+              <li class='negro-text'>
+                <a class='waves-effect' href='empresa.html'>Empresa</a>
+              </li>
+              <li class='divider'></li>
+              <li class='negro-text'>
+                <a class='waves-effect' href='contacto.html'>Contacto</a>
+              </li>
+              <li class='divider'></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class='imageback blanco'>
+        <img src='img/contacto.jpg' style='width:100%; !important; position: relative; height: 450px; opacity: 0.8;'>
+      </div>
     </div>
-    <div class='cover' style='top:0%;'>
-      <img src='img/contacto.jpg' style='width:100%; !important; position: absolute; height: 60%; opacity: 0.7;'>
+    <div class='cover'>
+      <h1 class='center rojo-text fuente-bold-It'>Contacto</h1>
     </div>
-    <div class='cover' style='top: 30%;'>
-      <h1 class='center negro-text fuente-bold-It'>Contacto</h1>
-    </div>
-    <div class='cover grey lighten-4' style='top:53%; height:30% !important;'>
+    <div class='prod-cont'>
       <section>
         <article class='container white row' style='padding:30px; width:90%;'>
-          <form class='col s7' method='post'>
+          <form class='col l7 s12' method='post'>
             <h4 class='center fuente-Sbold orange-text darken-2'>Escríbenos</h4>
-            <div class='input-field col s10 col m6'>
+            <div class='input-field col s12 m6'>
               <i class='material-icons prefix' style='padding-top:5%;'>account_circle</i>
               <input id='name' name='name' type='text'>
               <label for='name'>Nombre</label>
             </div>
-            <div class='input-field col s10 col m6'>
+            <div class='input-field col s12 col m6'>
               <i class='material-icons prefix' style='padding-top:5%;'>email</i>
               <input class='validate' data-error='escribe un e-mail valido' data-success='correcto' id='email' name='email' type='email'>
               <label for='email'>Correo</label>
@@ -149,19 +193,19 @@
               <textarea class='materialize-textarea' id='cuerpo' name='cuerpo'></textarea>
               <label for='cuerpo'>Escribe tu mensaje aquí</label>
             </div>
-            <div class='input-field col s10 col m3'>
+            <div class='input-field col s4 col m3'>
               <input class='center' id='number' name='number' readonly='true' type='number'>
             </div>
-            <div class='input-field col s10 col m3'>
+            <div class='input-field col s8 col m3'>
               <input id='code' maxlength='4' name='code' type='tel'>
               <label for='code'>Ingresar código</label>
             </div>
-            <div class='input-field col s10 col m3'></div>
-            <div class='input-field col s10 col m3' style='padding-top: 2%;'>
-              <input class='rojo btn right' onclick='CompareNumbers()' type='submit' value='Enviar mensaje'>
+            <div class='input-field col s12 col m3'></div>
+            <div class='input-field col s12 col m3' style='padding-top: 2%;'>
+              <input class='rojo btn right' id='envioform' onclick='CompareNumbers()' type='submit' value='Enviar mensaje'>
             </div>
           </form>
-          <div class='col s5'>
+          <div class='col l5 s12' id='infocontacto'>
             <p class='orange-text text-darken-2 justify fuente-normal-It' style='font-size: 1.5em;'>Dirección</p>
             <p class='negro-text justify fuente-normal-It' style='font-size: 1.5em;'>
               Ciudad de México
@@ -180,10 +224,10 @@
         </article>
       </section>
     </div>
-    <footer class='page-footer grey darken-3' style='width:100%; bottom: -80% !important;'>
-      <div class='container' style='width:90%;'>
+    <div class='page-footer grey darken-3' style='width:100%;'>
+      <div class='container' style='width:100%;'>
         <div class='row'>
-          <div class='col l6 s12'>
+          <div class='col l6 m12 s12'>
             <h4 class='rojo-text fuente-bold-It'>Contacto</h4>
             <p class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
               Ciudad de México
@@ -195,7 +239,7 @@
             <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
               Mail:
               <a href='mailto:direccion@inteligenciasatelital.com'>
-                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1.2em;'>direccion@inteligenciasatelital.com</span>
+                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1em;'>direccion@inteligenciasatelital.com</span>
               </a>
             </p>
             <a href='contacto.html'>
@@ -204,17 +248,17 @@
               </p>
             </a>
           </div>
-          <div class='col l2 s12'>
+          <div class='col l2 m4 s4'>
             <a href='#'>
               <img class='responsive-img' src='img/facebook.png' style='padding-top: 30%; padding-bottom: 20%;'>
             </a>
           </div>
-          <div class='col l2 s12'>
+          <div class='col l2 m4 s4'>
             <a href='#'>
               <img class='responsive-img' src='img/twitter.png' style='padding-top: 30%; padding-bottom: 20%;'>
             </a>
           </div>
-          <div class='col l2 s12'>
+          <div class='col l2 m4 s4'>
             <a href='#'>
               <img class='responsive-img' src='img/google-plus.png' style='padding-top: 30%; padding-bottom: 20%;'>
             </a>
@@ -222,11 +266,11 @@
         </div>
       </div>
       <div class='footer-copyright negro'>
-        <div class='container'>
+        <div class='container white-text'>
           Powered By: ActoSoft
         </div>
       </div>
-    </footer>
+    </div>
     <a class='ancla' onclick='gototop()'>
       <img src='img/up-arrow.png'>
     </a>

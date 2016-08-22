@@ -139,7 +139,13 @@ i.bigger {
     display: none; }
 
   #relleno {
-    display: none; } }
+    display: none; }
+
+  #infocontacto {
+    display: none; }
+
+  #envioform {
+    text-align: center !important; } }
 @media screen and (max-width: 500px) {
   #ServerLink {
     width: 100%; } }
