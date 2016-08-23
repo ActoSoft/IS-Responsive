@@ -43,6 +43,10 @@ i.bigger {
 .center {
   text-align: center; }
 
+.left{
+  text-align: left;
+}
+
 .fuente-normal {
   font-family: 'Proxima N W01 Light'; }
 
