@@ -1,266 +1,271 @@
 !!! 5
-%html{:lang => "es"}
+%html{:lang => "en"}
 	%head
 		%meta{:charset => "UTF-8"}
-		%title Operaciones
+		%title Operations
 		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/icon?family=Material+Icons"}/
-		%link{:rel => "stylesheet", :href => "../css/materialize.min.css"}
-		%link{:rel => "stylesheet", :href => "../css/main.css"}
+		%link{:rel => "stylesheet", :href => "../../css/materialize.min.css"}
+		%link{:rel => "stylesheet", :href => "../../css/main.css"}
 		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/css?family=Galada|Roboto+Slab"}
-		%link{:rel => "icon", :href => "../img/favicon-large.png", :type => "image/x-icon"}
+		%link{:rel => "icon", :href => "../../img/favicon-large.png", :type => "image/x-icon"}
 		%link{:rel => "stylesheet", :href=> "https://www.fuelcdn.com/fonts/proxima-nova.css"}
 		%script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"}
-		%script{src: "../js/materialize.min.js"}
-		%script{src: "../js/facebookapi.js"}
-		%script{src: "../js/main.js"}
+		%script{src: "../../js/materialize.min.js"}
+		%script{src: "../../js/facebookapi.js"}
+		%script{src: "../../js/main.js"}
 		%meta{name:"viewport", content:"width=device-width, initial-scale=1.0"}
 	%body
 		.containeresponsive
 			%ul.dropdown-content#dropdown1{style:"background-color:rgba(255,255,255,.7) !important;"}
 				%li
-					%a.grey-text.text-darken-4{:href => "gestion-de-flotas.html"} GESTION DE FLOTAS
+					%a.grey-text.text-darken-4{:href => "fleet-management.html"} FLEET MANAGEMENT
 				%li
-					%a.grey-text.text-darken-4{:href => "seguridad-personal.html"} SEGURIDAD PERSONAL
+					%a.grey-text.text-darken-4{:href => "personal-security.html"} PERSONAL SECURITY
 				%li
-					%a.grey-text.text-darken-4{:href => "seguimiento-de-personal.html"} SEGUIMIENTO DE PERSONAL
+					%a.grey-text.text-darken-4{:href => "personal-monitoring.html"} PERSONAL MONITORING
 
 			%ul.dropdown-content#dropdown2{style:"background-color:rgba(255,255,255,.7) !important;"}
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/gps-tracker.html"} GPS TRACKER
+					%a.grey-text.text-darken-4{:href => "../products/motorcycle-compact-gps.html"} MOTORCYCLE COMPACT GPS
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/syrus-sy2210.html"} SYRUS SY2210
+					%a.grey-text.text-darken-4{:href => "../products/syrus-sy2210.html"} SYRUS SY2210
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/meitrack-vt310.html"} MEITRACK VT310
+					%a.grey-text.text-darken-4{:href => "../products/meitrack-vt310.html"} MEITRACK VT310
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/gps-tracker-vehiculos.html"} GPS TRACKER VEHICULOS 
+					%a.grey-text.text-darken-4{:href => "../products/gps-tracker-cars.html"} GPS TRACKER CARS
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/mini-tracker.html"} MINI TRACKER
+					%a.grey-text.text-darken-4{:href => "../products/mini-tracker.html"} MINI TRACKER
 				%li
-					%a.grey-text.text-darken-4{:href => "../dispositivos/trackimo.html"} TRACKIMO
+					%a.grey-text.text-darken-4{:href => "../products/trackimo.html"} TRACKIMO
+
 
 			.fixeded
 				.nav.orange.darken-2#navIdiomas
 					%ul.row{style:"margin:0; width:100%"}
-						%li.lang.col.offset-s10.s1.white-text Español 
-						%li.lang.col.s1.white-text Inglés
+						%a{href:"../../index.html"}
+							%li.lang.col.offset-s10.s1.white-text Spanish
+						%a{href:"#"}
+							%li.lang.col.s1.white-text English
 				
 				%nav#nava{style:"background-color:rgba(255,255,255,.6); height:100px;"}
 					.nav-wrapper{style:"background-color:transparent;"}
 						%a.brand-logo{href: "../index.html"}
-							%img.logoImg{src: "../img/Logo-Nuevo.png"}
+							%img.logoImg{src: "../../img/Logo-Nuevo.png"}
 						%a.button-collapse{style: "padding-top:20px; padding-left:20px;","data-activates":"mobile-demo"}
 							%i.material-icons.red-text.darken-2.medium menu
 						%ul.right.hide-on-med-and-down{style: "padding-top:15px;"}
 							%li.nav-li
-								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../index.html"} INICIO
+								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../index.html"} INDEX
 							%li.nav-li.hidden-text
 								%a.negro-text{href: ""} &nbsp&nbsp&nbsp
 							%li.nav-li
-								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold.dropdown-button{href: "../soluciones-industriales.html", "data-activates":"dropdown1"} SOLUCIONES INDUSTRIALES
+								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold.dropdown-button{href: "../industrial-solutions.html", "data-activates":"dropdown1"} INDUSTRIAL SOLUTIONS
 							%li.nav-li.hidden-text
 								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
 							%li.nav-li
-								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold.dropdown-button{href: "../dispositivos.html", "data-activates":"dropdown2"} DISPOSITIVOS
+								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold.dropdown-button{href: "../products.html", "data-activates":"dropdown2"} PRODUCTS
 							%li.nav-li.hidden-text
 								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
 							%li.nav-li
-								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../servidor.html"} SERVIDOR
+								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../server.html"} SERVER
 							%li.nav-li.hidden-text
 								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
 							%li.nav-li
-								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../empresa.html"} EMPRESA
+								%a.negro-text.texto-hover.fuente-normals.fuente-Sbold{href: "../meet-us.html"} MEET US
 							%li.nav-li.hidden-text
 								%a.negro-text{href: "#"} &nbsp&nbsp&nbsp
 							%li.nav-li.red.darken-2
-								%a.blanco-text{href: "../contacto.html"} CONTACTO
+								%a.blanco-text{href: "contact.html"} CONTACT
 
 						%ul.side-nav{id:"mobile-demo"}
-							%li
-								.userView
-									%img.background.responsive-img.padding-top{src: "../img/Logo-Nuevo.png"}
-							%li.negro-text
-								%a.waves-effect{:href => "../index.html", style:":hover: color:red;"} Inicio
-							%li.divider
-							%li.negro-text.dropdown-button{"data-activates":"soluciones-drop"} &nbsp&nbsp&nbsp&nbspSoluciones Industriales
-							%li.divider
 							%ul#soluciones-drop.dropdown-content{style:"z-index: 2;"}
 								%li.negro-text
-									%a.waves-effect{:href => "../soluciones-industriales.html"}Soluciones Industriales
+									%a{:href => "../industrial-solutions.html"}Industrial Solutions
 								%li.negro-text
-									%a.waves-effect{:href => "gestion-de-flotas.html"} Gestión de Flotas
+									%a{:href => "fleet-management.html"} Fleet Management
 								%li.negro-text
-									%a.waves-effect{:href => "seguridad-personal.html"} Seguridad Personal
+									%a{:href => "personal-security.html"} Personal Security
 								%li.negro-text
-									%a.waves-effect{:href => "seguimiento-de-personal.html"} Seguimiento de personal
-							%li.negro-text.dropdown-button{"data-activates":"dispositivos-drop"} &nbsp&nbsp&nbsp&nbspDispositivos
+									%a{:href => "personal-monitoring.html"} Personal Monitoring
+							%li
+								.userView
+									%img.background.responsive-img.padding-top{src: "../../img/Logo-Nuevo.png"}
+							%li.negro-text
+								%a.waves-effect{:href => "../index.html"} Index
+							%li.divider
+							%li.negro-text.dropdown-button{"data-activates":"soluciones-drop"} &nbsp&nbsp&nbsp&nbspIndustrial Solutions
+							%li.divider
+								
+							%li.negro-text.dropdown-button{"data-activates":"dispositivos-drop"} &nbsp&nbsp&nbsp&nbspProducts
 							%li.divider
 							%ul#dispositivos-drop.dropdown-content{style:"z-index: 2;"}
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos.html"} Todos
+									%a.waves-effect{style:"text-align:center;", :href => "../products.html"} All
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/gps-tracker.html"} GPS Tracker
-								
-								
-								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/syrus-sy2210.html"} Syrus SY2210
+									%a.waves-effect{style:"text-align:center;", :href => "../products/motorcycle-compact-gps.html"} Motorcycle Compact GPS
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/meitrack-vt310.html"} Meitrack VT310
+									%a.waves-effect{style:"text-align:center;", :href => "../products/syrus-sy2210.html"} Syrus SY2210
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/gps-tracker-vehiculos.html"} GPS Tracker Automovil 
+									%a.waves-effect{style:"text-align:center;", :href => "../products/meitrack-vt310.html"} Meitrack VT310
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/mini-tracker.html"} Mini Tracker
+									%a.waves-effect{style:"text-align:center;", :href => "../products/gps-tracker-cars.html"} GPS Tracker Cars
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/trackimo.html"} Trackimo
+									%a.waves-effect{style:"text-align:center;", :href => "../products/mini-tracker.html"} Mini Tracker
+								
+								
+								%li.negro-text
+									%a.waves-effect{style:"text-align:center;", :href => "../products/trackimo.html"} Trackimo
 								
 							%li.negro-text
-								%a.waves-effect{:href => "../servidor.html"} Servidor
+								%a.waves-effect{:href => "../server.html"} Server
 							%li.divider
 							%li.negro-text
-								%a.waves-effect{:href => "../empresa.html"} Empresa
+								%a.waves-effect{:href => "../meet-us.html"} Meet us
 							%li.divider
 							%li.negro-text
-								%a.waves-effect{:href => "../contacto.html"} Contacto
+								%a.waves-effect{:href => "../contact.html"} Contact
 							%li.divider
-		.cover#fondofixed{style: "top:0%; height:45%; position: fixed;"}
-			%img{src: "../img/solucionesback3.jpg", style: "width:100%; !important; position: static; height: auto; opacity: 0.6;"}
+		.cover#fondofixed{style: "top:0%; height:50%; position: fixed; width:100%;"}
+			%img{src: "../../img/solucionesback3.jpg", style: "width:100%; !important; position: static; height: 100%; opacity: 0.6;"}
+
 		.prod-cont.row#imagensol
 			%section.section.side-m.grey-text.text-darken-4.col.s12.m12.l9
 				%article{style: "width:100%; height:30% !important;"}
 					.col.s12
-						%img{style:"width:100%;", src:"../img/operaciones.jpg"}		
-	
+						%img{style:"width:100%;", src:"../../img/operaciones.jpg"}			
 					
 				%article.container{style:"width:90%;"}
 					.col.s12
-						%h1.fuente-bold.orange-text.darken-2.center Operaciones
+						%h1.fuente-bold.orange-text.darken-2.center Operations
 
 					.col.s12.m12.l6{style: "padding: 5%;"}
-						%p.justify.fuente-textosmall La plataforma de rastreo de Inteligencia Satelital permite dar seguimiento a vehículos y bienes durante la jornada de trabajo, aun cuando están almacenados, mediante el uso de dispositivos GPS duraderos y adaptables.
+						%p.justify.fuente-textosmall The I.S.’ tracking platform allows the vehicles monitoring and assets during the work-time, even when they’re stored, by using lasting and adaptable GPS devices.
 					.col.s12.m12.l6{style: "padding: 3%;"}
-						%h4.col.s12 Beneficios
+						%h4.col.s12 Benefits
 						%p.justify
 							%ul.fuente-textosmall
 								%li{style: "list-style-type: none; color:transparent;"} sadf
-								%li.circleli Maximice la Seguridad
-								%li.circleli Mayor Eficiencia y Rentabilidad
-								%li.circleli Reduzca costos
-								%li.circleli Mejore la satisfacción de los usuarios
+								%li.circleli Maximize security
+								%li.circleli More efficiency and reliability
+								%li.circleli Reduce costs
+								%li.circleli Improve the user's satisfaction
 					.col.s12
-						%h4 Dispositivos
+						%h4 Devices
 						%ul.collection
-							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Dispositivo 1
-							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Dispositivo 2
-							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Dispositivo 3
+							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Device 1
+							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Device 2
+							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Device 3
 					
 
 			%section.section.grey-text.text-darken-4.col.hide-on-small.s12.m12.l3
 				%article.container{style:"width:100%;"}
 					%ul
 						%li.side
-							%h4.red-text.fuente-Sbold Conoce todas las Soluciones Industriales disponibles!
+							%h4.red-text.fuente-Sbold Meet all the industrial solutions!
 						%li.side
-							%a{:href => "transporte.html"} 
-								Transporte
+							%a{:href => "transport.html"} 
+								Transport
 						%li.side
-							%a{:href => "gobierno.html"} 
-								Gobierno
+							%a{:href => "government.html"} 
+								Government
 						%li.side
-							%a{:href => "utilidades.html"} 
-								Utilidades
+							%a{:href => "utilities.html"} 
+								Utilities
 						%li.side
-							%a{:href => "telecomunicaciones.html"} 
-								Telecomunicaciones
+							%a{:href => "telecommunications.html"} 
+								Telecommunications
 						%li.side
-							%a{:href => "proteccion-infantil.html"} 
-								Protección Infantil
+							%a{:href => "childs-protection.html"} 
+								Child's protection
 						%li.side
-							%a.mainsolution.red-text{:href => "operaciones.html"} 
-								Operaciones
+							%a.mainsolution.red-text{:href => "operations.html"} 
+								Operations
 						%li.side
 							%a{:href => "adultos.html"} 
 								Adultos
 						%li.side
-							%a{:href => "rastreo-animales.html"} 
-								Rastreo de Animales
+							%a{:href => "pets-tracking.html"} 
+								Pet's tracking
 						%li.side
-							%a{:href => "servicio-alimentos.html"} 
-								Servicio de alimentos
+							%a{:href => "foods-service.html"} 
+								Food's service
 						%li.side
 							%a{:href => "heavy-duty.html"} 
 								Heavy-Duty
 						%li.side
-							%a{:href => "renta-autos.html"} 
-								Renta de autos
+							%a{:href => "cars-rent.html"} 
+								Car's Rent
 						%li.side
-							%a{:href => "conductores-adolescentes.html"} 
-								Conductores Adolescentes
+							%a{:href => "teenager-drivers.html"} 
+								Teenager drivers
 						%li.side
-							%a{:href => "rastreo-exclusivo.html"} 
-								Rastreo Exclusivo
+							%a{:href => "exclusive-track.html"} 
+								Exclusive track
 						%li.side
-							%a{:href => "seguridad.html"} 
-								Seguridad
+							%a{:href => "segurity.html"} 
+								Segurity
 						%li.side
-							%a{:href => "supervision.html"} 
-								Supervisión
+							%a{:href => "supervition.html"} 
+								Supervition
 						%li.side
 							%a{:href => "mineria-petroleo.html"} 
 								Minería, Petróleo, etc
 				
 		
-		.cover.prod-cont{style: "background-image: url(../img/files.jpg);"}
+		.cover.prod-cont{style: "background-image: url(../../img/files.jpg);"}
 			.container{style: "width:90%; background-color: rgba(255,255,255,0.8); display: block;"}
 				.row
 					.col.l12.s12.m12
-						%h3.center.fuente-bold-It Conoce todos los beneficios que Inteligencia Satelital le ofrece
+						%h3.center.fuente-bold-It Know all the benefits that S.I. offers
 				.row.center
 					.col.l12.s12.center
-						%a{href: "../beneficio.html"}	
-							%img{src: "../img/more-info2.png", style: "width: 100px; height:100px;"}
-							%h4.rojo-text.fuente-Sbold Conocer más					
+						%a{href: "../../beneficio.html"}	
+							%img{src: "../../img/more-info2.png", style: "width: 100px; height:100px;"}
+							%h4.rojo-text.fuente-Sbold Know more					
 					
 	
 		.page-footer.grey.darken-3{style:"width:100%;"}
 			.container{style:"width:90%;"}
 				.row
 					.col.l6.m12.s12
-						%h4.rojo-text.fuente-bold-It Contacto
+						%h4.rojo-text.fuente-bold-It Contact
 						%p.grey-text.text-lighten-4.justify.fuente-normal-It{style: "font-size: 1.2em;"}
 							Ciudad de México
 						%p.rojo-text.text-lighten-4.justify.fuente-normal-It{style: "font-size: 1.2em;"}
-							Tel: 
+							Phone number: 
 							%span.grey-text.text-lighten-4.justify.fuente-normal-It{style: "font-size: 1.2em;"} (55) 6349 1008
 						%p.rojo-text.text-lighten-4.justify.fuente-normal-It{style: "font-size: 1.2em;"}
 							Mail: 
 							%a{href: "mailto:direccion@inteligenciasatelital.com"}
 								%span.grey-text.text-lighten-4.justify.fuente-normal-It{style: "text-decoration: underline; font-size: 1em;"} direccion@inteligenciasatelital.com
 						
-						%a{href: "../contacto.html"}
+						%a{href: "contacto.html"}
 							%p.blue-text.text-lighten-4.justify.fuente-normal-It{style: "font-size: 1.5em; text-decoration: underline;"}
-								Escríbenos
+								Write us
 					.col.l2.m4.s4
 						%a{href: "#"}
-							%img.responsive-img{src: "../img/facebook.png", style: "padding-top: 30%; padding-bottom: 20%;"}
+							%img.responsive-img{src: "../../img/facebook.png", style: "padding-top: 30%; padding-bottom: 20%;"}
 					
 					.col.l2.m4.s4
 						%a{href: "#"}
-							%img.responsive-img{src: "../img/twitter.png", style:"padding-top: 30%; padding-bottom: 20%;"}
+							%img.responsive-img{src: "../../img/twitter.png", style:"padding-top: 30%; padding-bottom: 20%;"}
 					.col.l2.m4.s4
 						%a{href: "#"}
-							%img.responsive-img{src: "../img/google-plus.png", style:"padding-top: 30%; padding-bottom: 20%;"}
+							%img.responsive-img{src: "../../img/google-plus.png", style:"padding-top: 30%; padding-bottom: 20%;"}
 			
 			.footer-copyright.negro
 				.container.white-text
 					Powered By: ActoSoft
 
+
 		%a.ancla{onclick: "gototop()"}
-			%img{src: "../img/up-arrow.png"}
+			%img{src: "../../img/up-arrow.png"}
