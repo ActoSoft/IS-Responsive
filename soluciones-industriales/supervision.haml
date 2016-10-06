@@ -2,7 +2,7 @@
 %html{:lang => "es"}
 	%head
 		%meta{:charset => "UTF-8"}
-		%title Gps Tracker Autos
+		%title Supervisión
 		%link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/icon?family=Material+Icons"}/
 		%link{:rel => "stylesheet", :href => "../css/materialize.min.css"}
 		%link{:rel => "stylesheet", :href => "../css/main.css"}
@@ -18,25 +18,25 @@
 		.containeresponsive
 			%ul.dropdown-content#dropdown1{style:"background-color:rgba(255,255,255,.7) !important;"}
 				%li
-					%a.grey-text.text-darken-4{:href => "../soluciones-industriales/gestion-de-flotas.html"} GESTION DE FLOTAS
+					%a.grey-text.text-darken-4{:href => "gestion-de-flotas.html"} GESTION DE FLOTAS
 				%li
-					%a.grey-text.text-darken-4{:href => "../soluciones-industriales/seguridad-personal.html"} SEGURIDAD PERSONAL
+					%a.grey-text.text-darken-4{:href => "seguridad-personal.html"} SEGURIDAD PERSONAL
 				%li
-					%a.grey-text.text-darken-4{:href => "../soluciones-industriales/seguimiento-de-personal.html"} SEGUIMIENTO DE PERSONAL
+					%a.grey-text.text-darken-4{:href => "seguimiento-de-personal.html"} SEGUIMIENTO DE PERSONAL
 
 			%ul.dropdown-content#dropdown2{style:"background-color:rgba(255,255,255,.7) !important;"}
 				%li
-					%a.grey-text.text-darken-4{:href => "gps-tracker.html"} GPS TRACKER
+					%a.grey-text.text-darken-4{:href => "../dispositivos/gps-tracker.html"} GPS TRACKER
 				%li
-					%a.grey-text.text-darken-4{:href => "syrus-sy2210.html"} SYRUS SY2210
+					%a.grey-text.text-darken-4{:href => "../dispositivos/syrus-sy2210.html"} SYRUS SY2210
 				%li
-					%a.grey-text.text-darken-4{:href => "meitrack-vt310.html"} MEITRACK VT310
+					%a.grey-text.text-darken-4{:href => "../dispositivos/meitrack-vt310.html"} MEITRACK VT310
 				%li
-					%a.grey-text.text-darken-4{:href => "gps-tracker-vehiculos.html"} GPS TRACKER VEHICULOS 
+					%a.grey-text.text-darken-4{:href => "../dispositivos/gps-tracker-vehiculos.html"} GPS TRACKER VEHICULOS 
 				%li
-					%a.grey-text.text-darken-4{:href => "mini-tracker.html"} MINI TRACKER
+					%a.grey-text.text-darken-4{:href => "../dispositivos/mini-tracker.html"} MINI TRACKER
 				%li
-					%a.grey-text.text-darken-4{:href => "trackimo.html"} TRACKIMO
+					%a.grey-text.text-darken-4{:href => "../dispositivos/trackimo.html"} TRACKIMO
 
 			.fixeded
 				.nav.orange.darken-2#navIdiomas
@@ -89,11 +89,11 @@
 								%li.negro-text
 									%a.waves-effect{:href => "../soluciones-industriales.html"}Soluciones Industriales
 								%li.negro-text
-									%a.waves-effect{:href => "../soluciones-industriales/gestion-de-flotas.html"} Gestión de Flotas
+									%a.waves-effect{:href => "gestion-de-flotas.html"} Gestión de Flotas
 								%li.negro-text
-									%a.waves-effect{:href => "../soluciones-industriales/seguridad-personal.html"} Seguridad Personal
+									%a.waves-effect{:href => "seguridad-personal.html"} Seguridad Personal
 								%li.negro-text
-									%a.waves-effect{:href => "../soluciones-industriales/seguimiento-de-personal.html"} Seguimiento de personal
+									%a.waves-effect{:href => "seguimiento-de-personal.html"} Seguimiento de personal
 							%li.negro-text.dropdown-button{"data-activates":"dispositivos-drop"} &nbsp&nbsp&nbsp&nbspDispositivos
 							%li.divider
 							%ul#dispositivos-drop.dropdown-content{style:"z-index: 2;"}
@@ -101,27 +101,27 @@
 									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos.html"} Todos
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "gps-tracker.html"} GPS Tracker
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/gps-tracker.html"} GPS Tracker
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "syrus-sy2210.html"} Syrus SY2210
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/syrus-sy2210.html"} Syrus SY2210
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "meitrack-vt310.html"} Meitrack VT310
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/meitrack-vt310.html"} Meitrack VT310
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "gps-tracker-vehiculos.html"} GPS Tracker Automovil 
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/gps-tracker-vehiculos.html"} GPS Tracker Automovil 
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "mini-tracker.html"} Mini Tracker
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/mini-tracker.html"} Mini Tracker
 								
 								
 								%li.negro-text
-									%a.waves-effect{style:"text-align:center;", :href => "trackimo.html"} Trackimo
+									%a.waves-effect{style:"text-align:center;", :href => "../dispositivos/trackimo.html"} Trackimo
 								
 							%li.negro-text
 								%a.waves-effect{:href => "../servidor.html"} Servidor
@@ -132,64 +132,67 @@
 							%li.negro-text
 								%a.waves-effect{:href => "../contacto.html"} Contacto
 							%li.divider
-		-#.cover{style:"top:15.5%; width: 100%; position: absolute;"}
-		-#	.orange.darken-2{style: "height: 60%;"}
-		-#		%h2.blanco-bonito-text.fuente-Bold-It.center{style:"padding-top:2%; padding-bottom:1%;"} Dispositivos Inteligencia Satelital
-		-#		%p.blanco-bonito-text.fuente-Bold-It.center
-		-#			%b Una cosa aquí
-		-#			Otra aquí, que es como una descripcion de la pagina
 		.cover#fondofixed{style: "top:0%; height:45%; position: fixed; width:100%;"}
-			%img{src: "../img/dispositivosback2.jpg", style: "width:100%; !important; position: static; height: auto; opacity: 0.6;"}
-
+			%img{src: "../img/solucionesback3.jpg", style: "width:100%; !important; position: static; height: 100%; opacity: 0.6;"}
 		.prod-cont.row#imagensol
 			%section.section.side-m.grey-text.text-darken-4.col.s12.m12.l9
-				%article.container{style: "width:100%; height:30% !important;"}
-					.col.s12
-						%img{style:"width:100%; height:500px;", src:"../img/gpstracker3.jpg"}					
-				%article.container{style:"width:90%;"}
-					.col.s12
-						%h2.fuente-bold.orange-text.darken-2.center.aquino GPS Tracker Autos
-						%h3.fuente-bold.orange-text.darken-2.center.aquisi GPS Tracker Autos
+				%h3{style:"padding-top:200px;"} La página actualmente se encuentra en remodelación, algunas secciones no se encuentran disponibles, una disculpa.
 
-					.col.l6.m6.s12{style:"padding: 5%;"}
-						%ul.justify.fuente-textobig							
-							%li.circleli{style: "padding-bottom:3%;"} Rastreo satelital en tiempo real y a nivel de calle
-							%li.circleli{style: "padding-bottom:3%;"} Identifique sus vehículos desde su equipo móvil celular (smartphone, Ipod, iIphone) sin contratos previos.
-							%li.circleli{style: "padding-bottom:3%;"} Trasmite datos GPS y así mismo funciona como micrófono espía permitiéndole escuchar lo que sucede dentro de la unidad.
-							%li.circleli{style: "padding-bottom:3%;"} Botón de pánico: En caso de cualquier emergencia o peligro presione el botón de pánico y el GPS enviará un SMS indicándole la posición de donde se localiza la persona y una alerta de auxilio.
-							%li.circleli{style: "padding-bottom:3%;"} Alerta de acceso de velocidad: Si la unidad rebasa el límite de velocidad indicado por usted, el equipo le envía una alerta indicándole la velocidad y la posición de donde se localiza su unidad.
-					.col.l6.m12.s12{style:"padding: 5%;"}
-						%ul.justify.fuente-textobig
-							%li.circleli{style: "padding-bottom:3%;"} Apagado y encendido automático de la unidad: Sólo con enviar un SMS desde su Smartphone usted tendrá la seguridad de que la unidad estará inhabilitada hasta que usted de la orden de lo contrario, permitiéndole recuperarla sin darles oportunidad a los delincuentes de que sigan avanzando.
-							%li.circleli{style: "padding-bottom:3%;"} En caso de que la batería de su unidad sea extraída sin o con su autorización el equipo le envía un alerta indicándole dicho suceso así como la posición de donde se localiza su unidad.
-							%li.circleli{style: "padding-bottom:3%;"} Batería de respaldo interna
-								
-					
 			%section.section.grey-text.text-darken-4.col.hide-on-small.s12.m12.l3
-				%article.container{style:"width:100%;"}
+				%article.container{style: "width: 100%;"}
 					%ul
 						%li.side
-							%h4.red-text.fuente-Sbold Descubre los dispositivos disponibles en Inteligencia Satelital!
-						%li.side.fuente-textosmall
-							%a{:href => "gps-tracker.html"} 
-								GPS Tracker Motocicletas
-						
-						%li.side.fuente-textosmall
-							%a{:href => "syrus-sy2210.html"} 
-								Syrus SY2210
-						%li.side.fuente-textosmall
-							%a{:href => "meitrack-vt310.html"} 
-								Meitrack VT310
-						%li.side.fuente-textosmall
-							%a.mainsolution.red-text{:href => "gps-tracker-vehiculos.html"} 
-								GPS Tracker Autos
-						%li.side.fuente-textosmall
-							%a{:href => "mini-tracker.html"} 
-								Mini Tracker
-						%li.side.fuente-textosmall
-							%a{:href => "trackimo.html"} 
-								Trackimo
-				
+							%h4.red-text.fuente-Sbold Conoce todas las Soluciones Industriales disponibles!
+						%li.side
+							%a{:href => "transporte.html"} 
+								Transporte
+						%li.side
+							%a{:href => "gobierno.html"} 
+								Gobierno
+						%li.side
+							%a{:href => "utilidades.html"} 
+								Utilidades
+						%li.side
+							%a{:href => "telecomunicaciones.html"} 
+								Telecomunicaciones
+						%li.side
+							%a{:href => "proteccion-infantil.html"} 
+								Protección Infantil
+						%li.side
+							%a{:href => "operaciones.html"} 
+								Operaciones
+						%li.side
+							%a{:href => "adultos.html"} 
+								Adultos
+						%li.side
+							%a{:href => "rastreo-animales.html"} 
+								Rastreo de Animales
+						%li.side
+							%a{:href => "servicio-alimentos.html"} 
+								Servicio de alimentos
+						%li.side
+							%a{:href => "heavy-duty.html"} 
+								Heavy-Duty
+						%li.side
+							%a{:href => "renta-autos.html"} 
+								Renta de autos
+						%li.side
+							%a{:href => "conductores-adolescentes.html"} 
+								Conductores Adolescentes
+						%li.side
+							%a{:href => "rastreo-exclusivo.html"} 
+								Rastreo Exclusivo
+						%li.side
+							%a{:href => "seguridad.html"} 
+								Seguridad
+						%li.side
+							%a.mainsolution.red-text{:href => "supervision.html"} 
+								Supervisión
+						%li.side
+							%a{:href => "mineria-petroleo.html"} 
+								Minería, Petróleo, etc
+			
+		
 		.cover.prod-cont{style: "background-image: url(../img/files.jpg);"}
 			.container{style: "width:90%; background-color: rgba(255,255,255,0.8); display: block;"}
 				.row
