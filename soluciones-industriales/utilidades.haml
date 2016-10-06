@@ -41,8 +41,10 @@
 			.fixeded
 				.nav.orange.darken-2#navIdiomas
 					%ul.row{style:"margin:0; width:100%"}
-						%li.lang.col.offset-s10.s1.white-text Español 
-						%li.lang.col.s1.white-text Inglés
+						%a{href:"../index.html"}
+							%li.lang.col.offset-s10.s1.white-text Español
+						%a{href:"../en/index.html"}
+							%li.lang.col.s1.white-text Inglés
 				
 				%nav#nava{style:"background-color:rgba(255,255,255,.6); height:100px;"}
 					.nav-wrapper{style:"background-color:transparent;"}
@@ -130,7 +132,7 @@
 							%li.negro-text
 								%a.waves-effect{:href => "../contacto.html"} Contacto
 							%li.divider
-		.cover#fondofixed{style: "top:0%; height:45%; position: fixed;"}
+		.cover#fondofixed{style: "top:0%; height:45%; position: fixed; width:100%;"}
 			%img{src: "../img/solucionesback3.jpg", style: "width:100%; !important; position: static; height: 100%; opacity: 0.6;"}
 		.prod-cont.row#imagensol
 			%section.section.side-m.grey-text.text-darken-4.col.s12.m12.l9
@@ -161,7 +163,7 @@
 							%a.collection-item.orange-text.text-darken-4{:href => "#!"} Dispositivo 3
 					
 
-			%section.section.grey-text.text-darken-4.col.hide-on-small.s12.l6
+			%section.section.grey-text.text-darken-4.col.hide-on-small.s12.m12.l3
 				%article.container{style:"width:100%;"}
 					%ul
 						%li.side

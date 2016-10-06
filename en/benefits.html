@@ -1,164 +1,169 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang='en'>
   <head>
     <meta charset='UTF-8'>
-    <title>Beneficios</title>
+    <title>Benefits</title>
     <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-    <link href='css/materialize.min.css' rel='stylesheet'>
-    <link href='css/main.css' rel='stylesheet'>
+    <link href='../css/materialize.min.css' rel='stylesheet'>
+    <link href='../css/main.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Galada|Roboto+Slab' rel='stylesheet'>
-    <link href='img/favicon-large.png' rel='icon' type='image/x-icon'>
+    <link href='../img/favicon-large.png' rel='icon' type='image/x-icon'>
     <link href='https://www.fuelcdn.com/fonts/proxima-nova.css' rel='stylesheet'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
-    <script src='js/materialize.min.js'></script>
-    <script src='js/facebookapi.js'></script>
-    <script src='js/main.js'></script>
+    <script src='../js/materialize.min.js'></script>
+    <script src='../js/facebookapi.js'></script>
+    <script src='../js/main.js'></script>
+    <script src='../js/random-number-en.js'></script>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
   <body>
     <div class='containeresponsive'>
       <ul class='dropdown-content' id='dropdown1' style='background-color:rgba(255,255,255,.7) !important;'>
         <li>
-          <a class='grey-text text-darken-4' href='soluciones-industriales/gestion-de-flotas.html'>GESTION DE FLOTAS</a>
+          <a class='grey-text text-darken-4' href='industrial-solutions/fleet-management.html'>FLEET MANAGEMENT</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='soluciones-industriales/seguridad-personal.html'>SEGURIDAD PERSONAL</a>
+          <a class='grey-text text-darken-4' href='industrial-solutions/personal-security.html'>PERSONAL SECURITY</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='soluciones-industriales/seguimiento-de-personal.html'>SEGUIMIENTO DE PERSONAL</a>
+          <a class='grey-text text-darken-4' href='industrial-solutions/personal-monitoring.html'>PERSONAL MONITORING</a>
         </li>
       </ul>
       <ul class='dropdown-content' id='dropdown2' style='background-color:rgba(255,255,255,.7) !important;'>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/gps-tracker.html'>GPS TRACKER</a>
+          <a class='grey-text text-darken-4' href='products/motorcycle-compact-gps.html'>MOTORCYCLE COMPACT GPS</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/syrus-sy2210.html'>SYRUS SY2210</a>
+          <a class='grey-text text-darken-4' href='products/syrus-sy2210.html'>SYRUS SY2210</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/meitrack-vt310.html'>MEITRACK VT310</a>
+          <a class='grey-text text-darken-4' href='products/meitrack-vt310.html'>MEITRACK VT310</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/gps-tracker-vehiculos.html'>GPS TRACKER VEHICULOS</a>
+          <a class='grey-text text-darken-4' href='products/gps-tracker-cars.html'>GPS TRACKER CARS</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/mini-tracker.html'>MINI TRACKER</a>
+          <a class='grey-text text-darken-4' href='products/mini-tracker.html'>MINI TRACKER</a>
         </li>
         <li>
-          <a class='grey-text text-darken-4' href='dispositivos/trackimo.html'>TRACKIMO</a>
+          <a class='grey-text text-darken-4' href='products/trackimo.html'>TRACKIMO</a>
         </li>
       </ul>
       <div class='fixeded'>
         <div class='nav orange darken-2' id='navIdiomas'>
           <ul class='row' style='margin:0; width:100%'>
-            <li class='lang col offset-s10 s1 white-text'>Español</li>
-            <li class='lang col s1 white-text'>Inglés</li>
+            <a href='../index.html'>
+              <li class='lang col offset-s10 s1 white-text'>Spanish</li>
+            </a>
+            <a href='#'>
+              <li class='lang col s1 white-text'>English</li>
+            </a>
           </ul>
         </div>
         <nav id='nava' style='background-color:rgba(255,255,255,.6); height:100px;'>
           <div class='nav-wrapper' style='background-color:transparent;'>
             <a class='brand-logo' href='index.html'>
-              <img class='logoImg' src='img/Logo-Nuevo.png'>
+              <img class='logoImg' src='../img/Logo-Nuevo.png'>
             </a>
             <a class='button-collapse' data-activates='mobile-demo' style='padding-top:20px; padding-left:20px;'>
               <i class='material-icons red-text darken-2 medium'>menu</i>
             </a>
             <ul class='right hide-on-med-and-down' style='padding-top:15px;'>
               <li class='nav-li'>
-                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='index.html'>INICIO</a>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='index.html'>INDEX</a>
               </li>
               <li class='nav-li hidden-text'>
                 <a class='negro-text' href=''>&nbsp&nbsp&nbsp</a>
               </li>
               <li class='nav-li'>
-                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown1' href='soluciones-industriales.html'>SOLUCIONES INDUSTRIALES</a>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown1' href='industrial-solutions.html'>INDUSTRIAL SOLUTIONS</a>
               </li>
               <li class='nav-li hidden-text'>
                 <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
               </li>
               <li class='nav-li'>
-                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown2' href='dispositivos.html'>DISPOSITIVOS</a>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold dropdown-button' data-activates='dropdown2' href='products.html'>PRODUCTS</a>
               </li>
               <li class='nav-li hidden-text'>
                 <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
               </li>
               <li class='nav-li'>
-                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='servidor.html'>SERVIDOR</a>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='server.html'>SERVER</a>
               </li>
               <li class='nav-li hidden-text'>
                 <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
               </li>
               <li class='nav-li'>
-                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='empresa.html'>EMPRESA</a>
+                <a class='negro-text texto-hover fuente-normals fuente-Sbold' href='meet-us.html'>MEET US</a>
               </li>
               <li class='nav-li hidden-text'>
                 <a class='negro-text' href='#'>&nbsp&nbsp&nbsp</a>
               </li>
               <li class='nav-li red darken-2'>
-                <a class='blanco-text' href='contacto.html'>CONTACTO</a>
+                <a class='blanco-text' href='contact.html'>CONTACT</a>
               </li>
             </ul>
             <ul class='side-nav' id='mobile-demo'>
+              <ul class='dropdown-content' id='soluciones-drop' style='z-index: 2;'>
+                <li class='negro-text'>
+                  <a href='industrial-solutions.html'>Industrial Solutions</a>
+                </li>
+                <li class='negro-text'>
+                  <a href='industrial-solutions/fleet-management.html'>Fleet Management</a>
+                </li>
+                <li class='negro-text'>
+                  <a href='industrial-solutions/personal-security.html'>Personal Security</a>
+                </li>
+                <li class='negro-text'>
+                  <a href='industrial-solutions/personal-monitoring.html'>Personal Monitoring</a>
+                </li>
+              </ul>
               <li>
                 <div class='userView'>
-                  <img class='background responsive-img padding-top' src='img/Logo-Nuevo.png'>
+                  <img class='background responsive-img padding-top' src='../img/Logo-Nuevo.png'>
                 </div>
               </li>
               <li class='negro-text'>
-                <a class='waves-effect' href='index.html' style=':hover: color:red;'>Inicio</a>
+                <a class='waves-effect' href='index.html'>Index</a>
               </li>
               <li class='divider'></li>
-              <li class='negro-text dropdown-button' data-activates='soluciones-drop'>&nbsp&nbsp&nbsp&nbspSoluciones Industriales</li>
+              <li class='negro-text dropdown-button' data-activates='soluciones-drop'>&nbsp&nbsp&nbsp&nbspIndustrial Solutions</li>
               <li class='divider'></li>
-              <ul class='dropdown-content' id='soluciones-drop' style='z-index: 2;'>
-                <li class='negro-text'>
-                  <a class='waves-effect' href='soluciones-industriales.html'>Soluciones Industriales</a>
-                </li>
-                <li class='negro-text'>
-                  <a class='waves-effect' href='soluciones-industriales/gestion-de-flotas.html'>Gestión de Flotas</a>
-                </li>
-                <li class='negro-text'>
-                  <a class='waves-effect' href='soluciones-industriales/seguridad-personal.html'>Seguridad Personal</a>
-                </li>
-                <li class='negro-text'>
-                  <a class='waves-effect' href='soluciones-industriales/seguimiento-de-personal.html'>Seguimiento de personal</a>
-                </li>
-              </ul>
-              <li class='negro-text dropdown-button' data-activates='dispositivos-drop'>&nbsp&nbsp&nbsp&nbspDispositivos</li>
+              <li class='negro-text dropdown-button' data-activates='dispositivos-drop'>&nbsp&nbsp&nbsp&nbspProducts</li>
               <li class='divider'></li>
               <ul class='dropdown-content' id='dispositivos-drop' style='z-index: 2;'>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos.html' style='text-align:center;'>Todos</a>
+                  <a class='waves-effect' href='products.html' style='text-align:center;'>All</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/gps-tracker.html' style='text-align:center;'>GPS Tracker</a>
+                  <a class='waves-effect' href='products/motorcycle-compact-gps.html' style='text-align:center;'>Motorcycle Compact GPS</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/syrus-sy2210.html' style='text-align:center;'>Syrus SY2210</a>
+                  <a class='waves-effect' href='products/syrus-sy2210.html' style='text-align:center;'>Syrus SY2210</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/meitrack-vt310.html' style='text-align:center;'>Meitrack VT310</a>
+                  <a class='waves-effect' href='products/meitrack-vt310.html' style='text-align:center;'>Meitrack VT310</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/gps-tracker-vehiculos.html' style='text-align:center;'>GPS Tracker Automovil</a>
+                  <a class='waves-effect' href='products/gps-tracker-cars.html' style='text-align:center;'>GPS Tracker Cars</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/mini-tracker.html' style='text-align:center;'>Mini Tracker</a>
+                  <a class='waves-effect' href='products/mini-tracker.html' style='text-align:center;'>Mini Tracker</a>
                 </li>
                 <li class='negro-text'>
-                  <a class='waves-effect' href='dispositivos/trackimo.html' style='text-align:center;'>Trackimo</a>
+                  <a class='waves-effect' href='products/trackimo.html' style='text-align:center;'>Trackimo</a>
                 </li>
               </ul>
               <li class='negro-text'>
-                <a class='waves-effect' href='servidor.html'>Servidor</a>
+                <a class='waves-effect' href='server.html'>Server</a>
               </li>
               <li class='divider'></li>
               <li class='negro-text'>
-                <a class='waves-effect' href='empresa.html'>Empresa</a>
+                <a class='waves-effect' href='meet-us.html'>Meet us</a>
               </li>
               <li class='divider'></li>
               <li class='negro-text'>
-                <a class='waves-effect' href='contacto.html'>Contacto</a>
+                <a class='waves-effect' href='contact.html'>Contact</a>
               </li>
               <li class='divider'></li>
             </ul>
@@ -166,375 +171,371 @@
         </nav>
       </div>
       <div class='imageback' style='background-color:#fff;'>
-        <img src='img/beneficios.png' style='width:100%; !important; position: relative; height: 450px; opacity: 0.8;'>
+        <img src='../img/beneficios.png' style='width:100%; !important; position: relative; height: 450px; opacity: 0.8;'>
       </div>
       <div class='cover'>
-        <h1 class='center rojo-text fuente-bold-It'>Beneficios</h1>
+        <h1 class='center rojo-text fuente-bold-It'>Benefits</h1>
       </div>
       <div class='prod-cont fuente-Sbold justify'>
         <div class='container justify'>
           <div class='row'>
             <div class='col l12 s12 fuente-normal'>
-              <h5 style='padding-top:5%;'>Plataforma de localización GPS.</h5>
+              <h5 style='padding-top:5%;'>GPS Localization Platform</h5>
               <br>
-              <h5>Soluciones en seguridad y tecnología.</h5>
+              <h5>Technology and Security Solutions</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Inteligencia Satelital le ofrece un Software GPS integrado con nuestro potente SERVIDOR, para brindar un servicio de primer nivel, un sistema pensado en negocios, con amplitud para abarcar diferentes segmentos del mercado, como Administración de flotas de transporte de Carga, Empresas de Taxi con aplicativos APP, Vehículos Particulares, etc.</h5>
+              <h5 class='fuente-normal'>Satellite Intelligence gives you GPS Software integrated with our powerful server, to provide a first-class service, a business system designed, with broad to cover different market segments, such as Fleet Management, Taxi companies with an APP applicative system, Special Vehicles.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Inteligencia Satelital tiene un sistema de constante desarrollo e innovación, usted estará recibiendo actualizaciones disponibles de software y de esta forma mantener un servicio diferenciado de su mercado permitiéndole fidelidad a sus industrias. Contando con un equipo de diseño a su servicio para asistirlo en sus necesidades para aplicaciones específicas ya sea en hardware o en software</h5>
+              <h5 class='fuente-normal'>S.I. has an innovation system in constant improvement; you will be receiving available software updates and thus maintain a differentiated service on market allowing fidelity to your industry. S.I. has a design team to support your necessities in specific applications either hardware or software.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Ten tu flota localizada!</h4>
+              <h4 class='fuente-bold'>Keep your Fleet Located!</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>La Localización de Vehículos te permite saber de una forma rápida y eficaz la ubicación de tu vehículo las 24 horas del día.</h5>
+              <h5 class='fuente-normal'>The Vehicle location lets you know quickly and efficiently your vehicle’s location 24/7.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Seguimiento GPS</h4>
+              <h4 class='fuente-boldGPS'>Tracking</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Te permite solicitar posiciones puntuales, hacer un seguimiento en tiempo real del vehículo y ver el recorrido realizado por el vehículo en un periodo de tiempo determinado.</h5>
-              <h5 class='fuente-normal'>Todas las opciones disponibles son personalizables, pudiendo crear distintas zonas para los vehículos.</h5>
+              <h5 class='fuente-normal'>It allows you to request specific positions, vehicle real-time tracking and view the distance traveled over a period of time.</h5>
+              <h5 class='fuente-normal'>All available options are customizable and could create different vehicle zones.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Rutas y puntos de paso</h4>
+              <h4 class='fuente-bold'>Routes</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Visualiza la Ruta actual de un vehículo, busca y muestra rutas,consulta el histórico de paradas, control de límites, verificación de horarios y mucho mas...</h5>
+              <h5 class='fuente-normal'>Displays the current path of the vehicle, searches and displays routes, check the stop’s history, control limits, schedule verification and more….</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Groups and Waypoints</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Clusters of waypoints allow us a quick and visual view of all waypoints groups that are located on the map.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Alarms</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Set the mobile numbers to notify alerts. You can crate motion alerts, know when your vehicle is in motion. Security’s Zone Alarm, to know when is inside or outside a determined zone, speed alerts, and more…</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Reports</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>You can view the path followed and the generated alerts in a given period of time, customized reports with export option.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Sensors</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>With sensors we can know if our vehicle is full, if our cold store does not have the correct temperature, etc.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Security</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>The CELCOM GPS Locator Service, is a system that provides 24/7 security and active vehicle protection or mobile assets.</div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Mobile Control</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>With a mobile with web browser and internet connection (Wi-Fi or 3G) you can stay in tune, anywhere, about where your vehicle is.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold rojo-text'>Real-Time Tracking</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Unattended Monitoring</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>The vehicle motion can be monitored directly on screen without the necessity of refreshing the page, making an easier online vehicle tracking, current position and the followed route without necessity of choosing any other option on screen, only viewing the motion.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Map Zoom</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Map Zoom, with an accuracy up to 3 meters.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>GPS Device</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>The GPS charge is through the vehicle’s power. Other types of power are allowed such as autonomous batteries, lighter connection, etc. The installation cost is minimal.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Driver’s Identification</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>It can be known, anytime, the vehicle’s driver. By RFID cars or iButton and a reader inside the vehicle, the driver is identified in the system. The responsible could know the time and place where the driver left with the vehicle. With that information, work reports can be generated.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Monitoring and Tracking</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Monitoring and Tracking in a map of the location in real time of the fleet, drivers and field operators. The location accuracy is about 2.5 meters.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>SMS to Drivers</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Distance and positions are registered every minute. (Customizable)</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Speed Control</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Instantaneous Speed Control of each vehicle in the fleet</h5>
+              <h5 class='fuente-normal'>SMS can be send to driver’s mobile phone and being registered.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Photographic Satellite</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Use the satellite “Photographic View” to control the actual vehicle’s position when off the road. Easy one-click access to most functions, such as sending messages to drivers or vehicle’s routes studies on map.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Time Monitor</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Monitor driving times, stop times and break times.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Optimal Routes</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>Check departure time, arrival time and each stop’s duration along the route.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Trips Abroad</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>The GPS device allows knowing the position storage when the vehicle is outside the contracted data network coverage (Roaming), could be send to server.</h5>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h4 class='fuente-bold'>Alarms and Events</h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col l12 s12'>
+              <h5 class='fuente-normal'>The vehicle behavior and driving rules can be configured, allowing a constant vehicle monitor system and alert at the moment a rule was transgressed or when a particular event happened, you could receive these alerts via email, no additional cost, or short SMS (operator cost, in this case the customer must purchase a package of messages in CELCOM GPS).</h5>
               <br>
-              <h5 class='fuente-normal'>Agrupaciones y puntos de paso</h5>
+              <h5 class='fuente-normal'>The alarms can be of different types (sensors, location, time, etc.) Definitely, different type of events or alarms can be configured and set, sensors based on client’s needs.</h5>
               <br>
-              <h5 class='fuente-normal'>Las agrupaciones de puntos de paso nos permite ver de manera sencilla y visual todas las agrupaciones de puntos de paso que tenemos ubicadas en el mapa</h5>
+              <h5 class='fuente-normal'>The area could have any shape either regular or irregular.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Alarmas</h4>
+              <h4 class='fuente-bold'>Unexpected Shutdown</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Define los números de teléfono móvil al que deben ser notificadas tus alertas. Puedes crear alertas de movimiento (antirrobo), saber cuando tu vehículo está en movimiento; Alarma de zona de seguridad, para saber cuando entra o sale de una zona determinada; alertas de velocidad, etc...</h5>
+              <h5 class='fuente-normal'>It’s allowed to receive SMS and email notifications for each unexpected stop along the way with customized duration.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Ten tu flota localizada!</h4>
+              <h4 class='fuente-bold'>Additional Sensors Alarm</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>La Localización de Vehículos te permite saber de una forma rápida y eficaz la ubicación de tu vehículo las 24 horas del día.</h5>
+              <h5 class='fuente-normal'>Gates monitor, opening/closing, external control devices activation, a panic button to prevent theft.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Informes</h4>
+              <h4 class='fuente-bold'>Outside Area/Out of Time</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Permite ver el recorrido seguido y las alertas que se han generado en un determinado periodo de tiempo, informes personalizados con opción de exportación</h5>
+              <h5 class='fuente-normal'>Vehicle out-of-area, as well as out-of-time alarms</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Sensores</h4>
+              <h4 class='fuente-bold'>Maintenance Alarms</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Gracias a los sensores podemos saber si nuestro vehículo recolector esta lleno, si nuestra cámara frigorífica no tiene la temperatura correcta, etc...</h5>
+              <h5 class='fuente-normal'>The Vehicle’s maintenance alarms are based on the travelled kilometers, preventive maintenance action control in vehicles to avoid breakdowns. Almost all changes made in vehicles are under a determined number of kilometers travelled, parameter which is easily measurable by the system. Oil changes, wheel changes, periodic revision(s), etc.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Seguridad</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>El servicio de localización de CELCOM GPS, es un sistema que le proporciona seguridad las 24 horas, 365 días al año de protección activa para su vehículo o activos móviles.</div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Control desde tu móvil</h4>
+              <h4 class='fuente-bold'>Unexpected Motion</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Con un terminal móvil con un navegador web y conexión a internet (Wifi o 3G) podrás estar informado en todo momento de donde se encuentran tus vehículos...</h5>
+              <h5 class='fuente-normal'>Immediate notification if the vehicle moves unexpectedly overnight, during weekends or between the no-activity hours designated.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold rojo-text'>Seguimiento en tiempo real</h4>
+              <h4 class='fuente-bold'>Arrival and Departure Notifications</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Monitorio desatendido</h4>
+              <h5 class='fuente-normal'>It’s the notification about the vehicle’s arrival or departure, from a geographic area of interest such as headquarters, warehouse, work sites, customer sites, delivery sites, etc.</h5>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Se puede monitorizar el movimiento de un ve-hículo directamente en la pantalla sin necesi-dad de volver a cargar la página, facilitando el seguimiento del vehículo on-line, su posición actual y la ruta seguida sin necesidad de pulsar ninguna opción en la pantalla, sólo visualizan-do el movimiento</h5>
+              <h4 class='fuente-bold'>Speed Limit Exceeded</h4>
             </div>
           </div>
           <div class='row'>
             <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Zoom en el mapa</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Zoom-en el mapa, con una precisión de hasta 3 metros.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Dispositivo GPS</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>La alimentación del GPS es a través de la corriente eléctrica del vehículo. Se admiten otros tipos como baterías autónomas, conexiones a mechero, etc. El coste de instalación es mínimo.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Identificación del Conductor</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Identificación del conductor, se puede conocer en todo momento el conductor del vehículo. Mediante tarjetas RFID o iButton y un lector ubicado en el vehículo, el conductor se identifica en el sistema. El responsable podrá conocer al momento la fecha y lugar donde el conductor partió con el vehículo. Con esa información se pueden generar informes de trabajo.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Seguimiento y localización</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Seguimiento y localización en un mapa de la ubicación en tiempo real de su flota, conductores y operadores de campo. La precisión de la localización es de 2.5 m.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>SMS a los conductores</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Metros, y las posiciones se registran cada 60 segundos.(Configurable)</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Control de la Velocidad</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>LControl de la velocidad instantánea de cada vehículo de la flota.</h5>
-              <h5 class='fuente-normal'>Se pueden enviar SMS a los móviles de los con-ductores,quedando estos registrados.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Satélite de Tiempos</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Utilice el satélite mirada fotográfica para controlar la posición real del vehículo, cuando esté fuera de la carretera. Fácil acceso con un clic a la mayoría de funciones, tales como el envío de mensajes a los conductores o el estudio de la ruta del vehículo en el mapa.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Supervisión de Tiempos</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Supervisar los tiempos de conducción, los tiempos de parada, tiempos de descanso.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Rutas Óptimas</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Verifica horario de partida, de llegada, hora y duración de cada parada a lo largo de la ruta.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Viajes al extranjero</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>El dispositivo GPS permite el almacenamiento de posiciones cuando el vehículo se enCuentra fuera de la cobertura de datos de la red contratada (Roaming), pudiendo enviarlas al servido</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Alarmas y eventos</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Se podrá configurar las reglas de comportamiento y las reglas de conducción para sus Vehículos, permitiendo que el sistema monitorice constantemente sus vehículos y le avise en el momento en el que una regla se haya transgredido o en el momento en el que haya sucedido un evento concreto, pudiendo recibir dichas alertas por correo electrónico, sin coste adicional, o por mensaje corto SMS (coste operadora, en este caso el cliente debe adquirir un paquete de mensajes en CELCOM GPS para automatizar el envío). Las alarmas pueden ser de diversos tipos (sensores, localización, tiempo, etc.)</h5>
-              <br>
-              <h5 class='fuente-normal'>En definitiva se pueden configurar y definir distintos tipos deeventos y alarmas en los vehículos, en base a los sen-sores que el cliente necesite.</h5>
-              <br>
-              <h5 class='fuente-normal'>El área puede tener cualquier forma geométrica tanto regular como irregular.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Parada inesperada</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Se permite recibir notificaciones por SMS y/o correo electrónico para cada parada inesperada en el camino. La duración es configurable.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Alarmas en sensores adicionales</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Monitor de puertas de embarque, de apertura/cierre, la activación de dispositivos externos de control, el uso de un botón de pánico para prevenir los robos</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Fuera de área / Fuera de horario</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Alarmas por vehículo fuera de área o bien fuera de horario.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Alarma de Mantenimiento</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Alarmas de mantenimiento de vehículos basada en los kilómetros realizados, control de acciones de mantenimiento preventivo en vehículos para evitar averías. Casi todos los cambios que se realizan en los vehículos, se hacen en base a un determinado número de kilómetros recorridos, parámetro que es fácilmente medible por el sistema. Cambios de aceite, cambios de ruedas, revisión/es periódicas, etc.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Movimiento inesperado</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Notificación inmediata si el vehículo se mueve de forma inesperada durante la noche, durante los fines de semana, o en el horario de no actividad que se designe.</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Notificaciones de llegada y salida</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Notificaciones cuando un vehículo llega o sale de un área geográfica de interés (en la sede, el almacén, los sitios de trabajo, los sitios de los cli-entes, los sitios de entrega, etc.).</h5>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h4 class='fuente-bold'>Límite  de velocidad superado</h4>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col l12 s12'>
-              <h5 class='fuente-normal'>Recibir alertas cuando se supere un límite de velocidad previamente configurado</h5>
+              <h5 class='fuente-normal'>Receive alerts when the speed limit previously configured is exceeded.</h5>
             </div>
           </div>
         </div>
       </div>
-      <div class='page-footer grey darken-3' style='width:100%;'>
-        <div class='container' style='width:90%;'>
-          <div class='row'>
-            <div class='col l6 m12 s12'>
-              <h4 class='rojo-text fuente-bold-It'>Contacto</h4>
-              <p class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
-                Ciudad de México
-              </p>
-              <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
-                Tel:
-                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>(55) 6349 1008</span>
-              </p>
-              <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
-                Mail:
-                <a href='mailto:direccion@inteligenciasatelital.com'>
-                  <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1em;'>direccion@inteligenciasatelital.com</span>
-                </a>
-              </p>
-              <a href='contacto.html'>
-                <p class='blue-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.5em; text-decoration: underline;'>
-                  Escríbenos
-                </p>
-              </a>
-            </div>
-            <div class='col l2 m4 s4'>
-              <a href='#'>
-                <img class='responsive-img' src='img/facebook.png' style='padding-top: 30%; padding-bottom: 20%;'>
-              </a>
-            </div>
-            <div class='col l2 m4 s4'>
-              <a href='#'>
-                <img class='responsive-img' src='img/twitter.png' style='padding-top: 30%; padding-bottom: 20%;'>
-              </a>
-            </div>
-            <div class='col l2 m4 s4'>
-              <a href='#'>
-                <img class='responsive-img' src='img/google-plus.png' style='padding-top: 30%; padding-bottom: 20%;'>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class='footer-copyright negro'>
-          <div class='container white-text'>
-            Powered By: ActoSoft
-          </div>
-        </div>
-      </div>
-      <a class='ancla' onclick='gototop()'>
-        <img src='img/up-arrow.png'>
-      </a>
     </div>
+    <div class='page-footer grey darken-3' style='width:100%;'>
+      <div class='container' style='width:90%;'>
+        <div class='row'>
+          <div class='col l6 m12 s12'>
+            <h4 class='rojo-text fuente-bold-It'>Contact</h4>
+            <p class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
+              Ciudad de México
+            </p>
+            <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
+              Phone number:
+              <span class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>(55) 6349 1008</span>
+            </p>
+            <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
+              Mail:
+              <a href='mailto:direccion@inteligenciasatelital.com'>
+                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1em;'>direccion@inteligenciasatelital.com</span>
+              </a>
+            </p>
+            <a href='contacto.html'>
+              <p class='blue-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.5em; text-decoration: underline;'>
+                Write us
+              </p>
+            </a>
+          </div>
+          <div class='col l2 m4 s4'>
+            <a href='#'>
+              <img class='responsive-img' src='../img/facebook.png' style='padding-top: 30%; padding-bottom: 20%;'>
+            </a>
+          </div>
+          <div class='col l2 m4 s4'>
+            <a href='#'>
+              <img class='responsive-img' src='../img/twitter.png' style='padding-top: 30%; padding-bottom: 20%;'>
+            </a>
+          </div>
+          <div class='col l2 m4 s4'>
+            <a href='#'>
+              <img class='responsive-img' src='../img/google-plus.png' style='padding-top: 30%; padding-bottom: 20%;'>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='footer-copyright negro'>
+        <div class='container white-text'>
+          Powered By: ActoSoft
+        </div>
+      </div>
+    </div>
+    <a class='ancla' onclick='gototop()'>
+      <img src='../img/up-arrow.png'>
+    </a>
   </body>
 </html>
