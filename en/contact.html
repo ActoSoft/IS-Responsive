@@ -13,7 +13,7 @@
     <script src='../js/materialize.min.js'></script>
     <script src='../js/facebookapi.js'></script>
     <script src='../js/main.js'></script>
-    <script src='../js/random-number-en.js'></script>
+    <script src='../js/random-number.js'></script>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
   <body>
@@ -180,7 +180,7 @@
     <div class='prod-cont'>
       <section>
         <article class='container white row' style='padding:30px; width:90%;'>
-          <form class='col l7 s12' method='post'>
+          <div class='col l7 s12' method='post'>
             <h4 class='center fuente-Sbold orange-text darken-2'>Write us</h4>
             <div class='input-field col s12 m6'>
               <i class='material-icons prefix' style='padding-top:5%;'>account_circle</i>
@@ -204,11 +204,11 @@
               <input id='code' maxlength='4' name='code' type='tel'>
               <label for='code'>Enter code</label>
             </div>
-            <div class='input-field col s12 col m3'></div>
-            <div class='input-field col s12 col m3' style='padding-top: 2%;'>
-              <input class='rojo btn right' id='envioform' onclick='CompareNumbers()' type='submit' value='Send message'>
+            <div class='input-field col s12 col m1'></div>
+            <div class='input-field col s12 col m5' style='padding-top: 2%;'>
+              <button class='rojo btn right fuente-normal-It' id='envioform'>Enviar mensaje</button>
             </div>
-          </form>
+          </div>
           <div class='col l5 s12' id='infocontacto'>
             <p class='orange-text text-darken-2 justify fuente-normal-It' style='font-size: 1.5em;'>Address</p>
             <p class='negro-text justify fuente-normal-It' style='font-size: 1.5em;'>
@@ -278,5 +278,35 @@
     <a class='ancla' onclick='gototop()'>
       <img src='../img/up-arrow.png'>
     </a>
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <script>
+      var config = {
+          apiKey: "AIzaSyAT-LgPZc43L6bnGe_IdaN0o4UoL11MdXY",
+          authDomain: "inteligenciasatelital.firebaseapp.com",
+          databaseURL: "https://inteligenciasatelital.firebaseio.com",
+          storageBucket: "inteligenciasatelital.appspot.com",
+          messagingSenderId: "629810405004"
+        };
+        firebase.initializeApp(config);
+  </script>
+  <script>
+    var database = firebase.database();
+    var comentarios = database.ref('Comentarios');
+    $('#envioform').on('click', function() {
+      if($('#number').val() == $('#code').val()){
+        comentarios.push({
+          nombre: $('#name').val(),
+          correo: $('#email').val(),
+          comentario: $('#cuerpo').val()
+        });
+        $(location).attr('href','index.html');
+      }
+      else{
+        //alert('Los números no coinciden, intenta nuevamente');
+        Materialize.toast('Numbers don´t match' ,4000,'rounded center-align','top');
+        $(location).atrr('href','dispositivos.html');
+      }
+    });
+  </script>
   </body>
 </html>
