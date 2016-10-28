@@ -2,7 +2,12 @@
 @import "colores";
 @import "media";
 
-
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 15%;
+  left:40%;  
+}
 .slider2{
   width: 100%;  
   padding-top: 130px;

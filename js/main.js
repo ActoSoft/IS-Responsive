@@ -21,6 +21,8 @@ $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({
     	full_width: true
     });
+
+     $('.tooltipped').tooltip({delay: 50});
         
 	/*$(".nav").css({ "background-color":"#333333",
 									"box-shadow":"none",

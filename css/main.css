@@ -181,10 +181,20 @@ i.bigger {
   .slidesjs-navigation {
     width: 50%;
     float: none;
-    text-align: center; } }
+    text-align: center; }
+
+  #toast-container {
+    left: 1% !important;
+    width: 70% !important; } }
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 15%;
+  left: 40%; }
+
 .slider2 {
   width: 100%;
   padding-top: 130px; }
