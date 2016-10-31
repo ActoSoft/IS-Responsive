@@ -167,10 +167,7 @@ i.bigger {
     display: none; }
 
   .aquino {
-    display: none !important; }
-
-  .collection-item.avatar {
-    height: 70px !important; } }
+    display: none !important; } }
 @media screen and (min-width: 900px) {
   .aquisi {
     display: none !important; } }
@@ -558,6 +555,9 @@ td {
 .imagenloader {
   width: 40%;
   height: 40%; }
+
+.collection-item.avatar {
+  height: auto !important; }
 
 /*
 .slide-next{

@@ -328,7 +328,13 @@
               '<li class="collection-item avatar"><i class="material-icons circle">folder</i><span class="title">'+data.val().nombre+'</span><p style="font-weight:bold;">'+data.val().correo+'</p><p>'+data.val().comentario+'</p></li>'
               );
             $('.onloader').css({"display":"none"});
-          });
+            $('#user').val('');
+            $('#pass').val('');
+             firebase.auth().signOut().then(function() {
+              console.log("Cerrar sesion");
+            });
+
+          }); 
           //$('#user').val() = '';
           //$('#pass').val() = '';
         }
