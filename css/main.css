@@ -167,7 +167,10 @@ i.bigger {
     display: none; }
 
   .aquino {
-    display: none !important; } }
+    display: none !important; }
+
+  .collection-item.avatar {
+    height: 70px !important; } }
 @media screen and (min-width: 900px) {
   .aquisi {
     display: none !important; } }
@@ -185,7 +188,10 @@ i.bigger {
 
   #toast-container {
     left: 1% !important;
-    width: 70% !important; } }
+    width: 70% !important; }
+
+  .contenedor-datos {
+    width: 100% !important; } }
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
@@ -542,6 +548,16 @@ td {
 
 .width-server {
   width: 50%; }
+
+.contenedor-datos {
+  width: 80%; }
+
+.onloader {
+  display: none; }
+
+.imagenloader {
+  width: 40%;
+  height: 40%; }
 
 /*
 .slide-next{

@@ -8,13 +8,11 @@
     <link href='css/main.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Galada|Roboto+Slab' rel='stylesheet'>
     <link href='img/favicon-large.png' rel='icon' type='image/x-icon'>
-    <link href='https://www.fuelcdn.com/fonts/proxima-nova.css' rel='stylesheet'>
     <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
     <script src='js/materialize.min.js'></script>
-    <script src='js/facebookapi.js'></script>
     <script src='js/main.js'></script>
     <script src='js/SlidesJS/source/jquery.slides.js'></script>
     <script src='js/slides.js'></script>
@@ -210,7 +208,7 @@
       </div>-->
     </div>
     <div class='cover' style="padding-top: 10%;">
-      <h1 class='center rojo-text fuente-bold-It'>Bienvenido Administrador</h1>
+      <h2 class='center rojo-text fuente-bold-It'>Bienvenido Administrador</h2>
       <h3 class='center rojo-text fuente-bold-It'>Por favor, autentícate</h3>
     </div>
     <div class="container white">
@@ -238,10 +236,13 @@
           </div>
     </div>
     <div class='prod-cont' style='z-index:2;'>
-        <div class='container justify' style='width: 90%;'>
-          <div id="comentarios">
-            
+        <div class='container justify contenedor-datos'>
+          <div class="onloader center">
+            <img src="img/loading.svg" class="imagenloader">
           </div>
+          <ul class="collection" id="comentarios">
+            
+          </ul>
         </div>
     </div>  
       <div class='page-footer grey darken-3' style='width:100%;'>
@@ -312,6 +313,7 @@
     console.log("Cerrar sesion");
     });
     $('#Autenticar').on('click', function(){
+      $('.onloader').css({"display":"block"});
       firebase.auth().signInWithEmailAndPassword($('#user').val(),$('#pass').val()).catch(function(error){
         console.log(error.code);
         console.log(error.message);
@@ -320,11 +322,15 @@
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           console.log('Estoy aqui papu');
-          firebase.database().ref('Comentarios').once('value').then(function(data){
+          firebase.database().ref('Comentarios').on('child_added',function(data){
             console.log(data.val());
-            //console.log('alv');
-            $('#comentarios').append('<p>'+data.val().nombre+'</p>')
+            $('#comentarios').prepend(
+              '<li class="collection-item avatar"><i class="material-icons circle">folder</i><span class="title">'+data.val().nombre+'</span><p style="font-weight:bold;">'+data.val().correo+'</p><p>'+data.val().comentario+'</p></li>'
+              );
+            $('.onloader').css({"display":"none"});
           });
+          //$('#user').val() = '';
+          //$('#pass').val() = '';
         }
         else
         {

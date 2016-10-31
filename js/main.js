@@ -18,9 +18,7 @@ $(document).ready(function(){
 		constrain_width: false
 	});
 	
-    $('.carousel.carousel-slider').carousel({
-    	full_width: true
-    });
+
 
      $('.tooltipped').tooltip({delay: 50});
         
