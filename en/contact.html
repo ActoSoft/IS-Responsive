@@ -14,6 +14,12 @@
     <script src='../js/facebookapi.js'></script>
     <script src='../js/main.js'></script>
     <script src='../js/random-number.js'></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_eiimuN2nGmstUU961P1th");
+       })();
+    </script>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
   </head>
   <body>
@@ -292,6 +298,7 @@
   <script>
     var database = firebase.database();
     var comentarios = database.ref('Comentarios');
+    var seenvio = false;
     $('#envioform').on('click', function() {
       if($('#number').val() == $('#code').val()){
         comentarios.push({
@@ -299,13 +306,30 @@
           correo: $('#email').val(),
           comentario: $('#cuerpo').val()
         });
-        $(location).attr('href','index.html');
+        emailjs.send("gmail","newcontact",{
+          nombre: $('#name').val(),
+          correo: $('#email').val(),
+          comentario: $('#cuerpo').val()
+        }).then(function(response){
+          console.log("Awebo, se envia status=%d, text=%s", response.status, response.text);
+          seenvio = true;
+          if(seenvio == true){
+            Materialize.toast('Your message has been sent',4000,'rounded center-align','top');
+            setTimeout(function(){redireccionar()},4000);
+        }
+          console.log(seenvio);
+        }, function(err){
+          console.log("Fallo alv error=",err);
+        });
       }
       else{
         //alert('Los números no coinciden, intenta nuevamente');
-        Materialize.toast('Numbers don´t match' ,4000,'rounded center-align','top');
+        Materialize.toast('Numbers don´t match',4000,'rounded center-align','top');
         $(location).atrr('href','dispositivos.html');
       }
+      function redireccionar(){
+        $(location).attr('href','index.html');
+      };
     });
   </script>
   </body>

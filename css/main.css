@@ -133,6 +133,10 @@ i.bigger {
   #nava {
     top: 0%; }
 
+  .width-catalogo {
+    width: 75% !important;
+    height: 500px !important; }
+
   .slider2 {
     padding-top: 0px !important; }
 
@@ -188,7 +192,11 @@ i.bigger {
     width: 70% !important; }
 
   .contenedor-datos {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .width-catalogo {
+    width: 100% !important;
+    height: 500px !important; } }
 @media screen and (max-width: 1175px) {
   .hidden-text {
     display: none; } }
@@ -219,6 +227,10 @@ i.bigger {
 
 .contenedor {
   width: 100%; }
+
+.width-catalogo {
+  width: 10%;
+  height: 300px; }
 
 .slidesjs-pagination {
   background-color: #333333;
