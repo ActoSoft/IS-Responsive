@@ -226,7 +226,7 @@ i.bigger {
   width: 100%; }
 
 .contactos-padding-top {
-  height: 120px;
+  height: 120px !important;
   display: none; }
 
 .slides2 img {

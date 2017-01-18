@@ -320,6 +320,16 @@
         firebase.initializeApp(config);
   </script>
   <script>
+    $(document).ready(function(){
+      $("#pass").keypress(function(e){
+        if(e.keyCode==13)
+        {
+            $('#Autenticar').click();
+        }
+      });
+    });
+  </script>
+  <script>
       firebase.auth().signOut().then(function() {
     console.log("Cerrar sesion");
     });
