@@ -171,7 +171,10 @@ i.bigger {
     display: none; }
 
   .aquino {
-    display: none !important; } }
+    display: none !important; }
+
+  .contactos-padding-top {
+    height: 30px !important; } }
 @media screen and (min-width: 900px) {
   .aquisi {
     display: none !important; } }
@@ -221,6 +224,10 @@ i.bigger {
 
 .slides3 div {
   width: 100%; }
+
+.contactos-padding-top {
+  height: 120px;
+  display: none; }
 
 .slides2 img {
   width: 100%; }

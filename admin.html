@@ -238,7 +238,10 @@
             </div>
           </div>
     </div>
-    <div class='prod-cont' style='z-index:2;'>
+    <div id="contactos-padding-top" class="contactos-padding-top">
+      <p>&nbsp</p>
+    </div>
+    <div id="contactos" class='prod-cont' style='z-index:2;'>
         <div class='container justify contenedor-datos'>
           <div class="onloader center">
             <img src="img/loading.svg" class="imagenloader">
@@ -258,12 +261,12 @@
               </p>
               <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
                 Tel:
-                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>(55) 6349 1008</span>
+                <span class='grey-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>(55) 3032 4539</span>
               </p>
               <p class='rojo-text text-lighten-4 justify fuente-normal-It' style='font-size: 1.2em;'>
                 Mail:
-                <a href='mailto:direccion@inteligenciasatelital.com'>
-                  <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1em;'>direccion@inteligenciasatelital.com</span>
+                <a href='mailto:direccion@inteligenciasatelital.com.mx'>
+                  <span class='grey-text text-lighten-4 justify fuente-normal-It' style='text-decoration: underline; font-size: 1em;'>direccion@inteligenciasatelital.com.mx</span>
                 </a>
               </p>
               <a href='contacto.html'>
@@ -321,10 +324,14 @@
     console.log("Cerrar sesion");
     });
     $('#Autenticar').on('click', function(){
+      $('.contactos-padding-top').css({"display":"block"});
+      $('html, body').animate({scrollTop: $('#contactos-padding-top').offset().top},'slow');
       $('.onloader').css({"display":"block"});
       firebase.auth().signInWithEmailAndPassword($('#user').val(),$('#pass').val()).catch(function(error){
+        $('.onloader').css({"display":"none"});
         console.log(error.code);
         console.log(error.message);
+        Materialize.toast('No existe esa cuenta',3000,'rounded center-align','top');
       });
 
       firebase.auth().onAuthStateChanged(function(user) {
