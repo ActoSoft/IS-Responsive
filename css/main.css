@@ -177,7 +177,10 @@ i.bigger {
     height: 30px !important; } }
 @media screen and (min-width: 900px) {
   .aquisi {
-    display: none !important; } }
+    display: none !important; }
+
+  .contactos-padding-top {
+    height: 120px !important; } }
 @media screen and (max-width: 500px) {
   #ServerLink {
     width: 100%; }
