@@ -315,7 +315,7 @@
           correo: $('#email').val(),
           comentario: $('#cuerpo').val()
         });
-        emailjs.send("gmail","newcontact",{
+        emailjs.send("smtp_server","newcontact",{
           nombre: $('#name').val(),
           correo: $('#email').val(),
           comentario: $('#cuerpo').val()
